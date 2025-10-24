@@ -22,4 +22,5 @@ def test_insulatorcontaminationpiece():
     assert piece_output["contamination"] is not None
     assert piece_output["contamination"]!=-1
 
-test_insulatorcontaminationpiece()
+#if __name__ == "__main__":
+#	test_insulatorcontaminationpiece()

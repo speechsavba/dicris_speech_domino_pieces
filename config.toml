@@ -9,4 +9,4 @@ REPOSITORY_LABEL = "dicris_speech_domino_pieces"
 
 # The version of this Pieces release
 # Attention: changing this will create a new release
-VERSION = "0.1.1g"
+VERSION = "0.1.1f"

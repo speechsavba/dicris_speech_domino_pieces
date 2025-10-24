@@ -3,7 +3,7 @@ from enum import Enum
 
 class InputModel(BaseModel):
 	y: str = Field(
-		description='sound read with librosa library and converted to a base64 encoded string.',
+		description='path to audio or URL to audio or sound read with librosa library and converted to a base64 encoded string.',
 		json_schema_extra={
 			"from_upstream": "always"
 		}

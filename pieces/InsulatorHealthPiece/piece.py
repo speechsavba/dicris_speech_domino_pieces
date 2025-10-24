@@ -11,6 +11,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import SVR
 from sklearn.preprocessing import StandardScaler
 import joblib
+import requests
+
 
 norm_pipeline=None
 old_min=0
@@ -46,11 +48,16 @@ class InsulatorHealthPiece(BasePiece):
 		y = input_data.y
 
 		max_path_size = 4096#int(os.pathconf('/', 'PC_PATH_MAX'))
-		if len(y) < max_path_size and Path(y).exists() and Path(y).is_file():
-			self.logger.info("Y is a file path, loading with librosa")
-			if sr<=0:
-				sr=None
-			y, sr = librosa.load(y, sr=sr)
+		if len(y) < max_path_size:
+			if y.startswith('http'):
+				self.logger.info("Y seems to be URL, loading with requests and librosa")
+				y,sr=self.get_url_data(y)
+			elif  Path(y).exists() and Path(y).is_file():
+				self.logger.info("Y is a file path, loading with librosa")
+				if sr<=0:
+					sr=None
+				y, sr = librosa.load(y, sr=sr)
+
 		else:
 			self.logger.info("Y is not a file path, trying to decode as base64 string")
 			try:
@@ -119,3 +126,20 @@ class InsulatorHealthPiece(BasePiece):
 		self.logger.info('Prediction done')
 		print(y_pred)
 		return (y_pred)
+	def get_url_data(self,url):
+		try:
+			headers = {}
+			body_data = None
+			response = requests.get(url, headers=headers)
+			response.raise_for_status()
+
+		except requests.RequestException as e:
+			raise Exception(f"HTTP request error: {e}")
+
+		audio_bytes = BytesIO(response.content)
+
+		y, sr = librosa.load(audio_bytes, sr=None)
+
+		return(y,sr)
+
+

@@ -19,7 +19,7 @@ class ExampleSineWavePiece(BasePiece):
         # Generate wave figure
         time = np.linspace(0, input_data.duration, len(sine_wave))
         fig = go.Figure(data=go.Scatter(x=time, y=sine_wave, mode='lines'))
-        fig.update_layout(title='Sine Wave', xaxis_title='Time (s)', yaxis_title='Amplitude')
+        fig.update_layout(title='Sine Wave TrMa', xaxis_title='Time (s)', yaxis_title='Amplitude')
 
         # Save figure to piece file system
         fig_path = str(Path(self.results_path) / "sine.json")

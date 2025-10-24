@@ -77,20 +77,33 @@
     "CalcSumPiece": {
         "name": "CalcSumPiece",
         "dependency": {
-            "dockerfile": null,
+            "dockerfile": "Dockerfile_1",
             "requirements_file": null
         },
-        "tags": [],
+        "tags": [
+            "sum"
+        ],
         "style": {
-            "node_label": "Piece",
+            "node_label": "sum piece",
             "node_type": "default",
             "node_style": {
                 "backgroundColor": "#ebebeb"
             },
             "useIcon": true,
-            "icon_class_name": "fa-solid fa-circle",
+            "icon_class_name": "fa-solid:database",
             "iconStyle": {
                 "cursor": "pointer"
+            }
+        },
+        "description": "A Piece that makes sum of two numbers.",
+        "container_resources": {
+            "requests": {
+                "cpu": 100,
+                "memory": 128
+            },
+            "limits": {
+                "cpu": 500,
+                "memory": 512
             }
         },
         "input_schema": {
@@ -195,19 +208,32 @@
         "name": "RandomNumPiece",
         "dependency": {
             "dockerfile": null,
-            "requirements_file": null
+            "requirements_file": "requirements_0.txt"
         },
-        "tags": [],
+        "tags": [
+            "Random Num Piece"
+        ],
         "style": {
-            "node_label": "Piece",
+            "node_label": "Random Num Piece",
             "node_type": "default",
             "node_style": {
                 "backgroundColor": "#ebebeb"
             },
             "useIcon": true,
-            "icon_class_name": "fa-solid fa-circle",
+            "icon_class_name": "fa-solid:database",
             "iconStyle": {
                 "cursor": "pointer"
+            }
+        },
+        "description": "Get random number",
+        "container_resources": {
+            "requests": {
+                "cpu": 100,
+                "memory": 128
+            },
+            "limits": {
+                "cpu": 500,
+                "memory": 512
             }
         },
         "input_schema": {
@@ -243,5 +269,61 @@
         },
         "secrets_schema": null,
         "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/RandomNumPiece"
+    },
+    "InsulatorHealthPiece": {
+        "name": "InsulatorHealthPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_0.txt"
+        },
+        "tags": [
+            "default",
+            "insulator"
+        ],
+        "style": {
+            "node_label": "Insulator health",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "ic:twotone-filter",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "A Piece that predicts insulator health from sound.",
+        "input_schema": {
+            "properties": {
+                "y": {
+                    "default": "http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav",
+                    "description": "path to audio or URL to audio or sound read with librosa library and converted to a base64 encoded string.",
+                    "title": "audio to asses",
+                    "type": "string"
+                },
+                "sr": {
+                    "default": 192000,
+                    "description": "Sampling frequency of sound (integer)",
+                    "title": "Sampling frequency of sound",
+                    "type": "integer"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "contamination": {
+                    "default": 0.0,
+                    "description": "Contamination of insulator from sound (float)",
+                    "title": "Contamination",
+                    "type": "number"
+                }
+            },
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/InsulatorHealthPiece"
     }
 }

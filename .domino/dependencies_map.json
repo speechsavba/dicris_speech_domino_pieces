@@ -8,9 +8,21 @@
             "ExampleSineWavePiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/dicris_speech_domino_pieces/dicris_speech_domino_pieces:0.1.1c-group0"
+        "source_image": "ghcr.io/dicris_speech_domino_pieces/dicris_speech_domino_pieces:0.1.1e-group0"
     },
     "group1": {
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": null
+        },
+        "pieces": [
+            "CalcSumPiece",
+            "RandomNumPiece"
+        ],
+        "secrets": [],
+        "source_image": "ghcr.io/dicris_speech_domino_pieces/dicris_speech_domino_pieces:0.1.1e-group1"
+    },
+    "group2": {
         "dependency": {
             "dockerfile": null,
             "requirements_file": "requirements_0.txt"
@@ -19,6 +31,6 @@
             "ExampleSleepPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/dicris_speech_domino_pieces/dicris_speech_domino_pieces:0.1.1c-group1"
+        "source_image": "ghcr.io/dicris_speech_domino_pieces/dicris_speech_domino_pieces:0.1.1e-group2"
     }
 }

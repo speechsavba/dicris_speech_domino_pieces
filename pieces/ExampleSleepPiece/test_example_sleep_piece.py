@@ -1,6 +1,6 @@
 from domino.testing import piece_dry_run
 
-def test_example_simple_piece():
+def test_example_sleep_piece():
     input_data = dict(
         sleep_time=5
     )
@@ -10,5 +10,3 @@ def test_example_simple_piece():
     )
 
     assert output_data["message"] is not None
-
-test_example_simple_piece()

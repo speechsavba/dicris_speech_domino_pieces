@@ -74,6 +74,60 @@
         "secrets_schema": null,
         "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/ExampleSineWavePiece"
     },
+    "CalcSumPiece": {
+        "name": "CalcSumPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": null
+        },
+        "tags": [],
+        "style": {
+            "node_label": "Piece",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "fa-solid fa-circle",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "input_schema": {
+            "description": "Sum Piece Input Model",
+            "properties": {
+                "a_num": {
+                    "title": "A Num",
+                    "type": "number"
+                },
+                "b_num": {
+                    "default": 1.0,
+                    "description": "float",
+                    "title": "B Num",
+                    "type": "number"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "description": "Sleep Piece Output Model",
+            "properties": {
+                "message": {
+                    "description": "Sum of a and b",
+                    "title": "Message",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "message"
+            ],
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/CalcSumPiece"
+    },
     "ExampleSleepPiece": {
         "name": "ExampleSleepPiece",
         "dependency": {
@@ -136,5 +190,58 @@
         },
         "secrets_schema": null,
         "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/ExampleSleepPiece"
+    },
+    "RandomNumPiece": {
+        "name": "RandomNumPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": null
+        },
+        "tags": [],
+        "style": {
+            "node_label": "Piece",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "fa-solid fa-circle",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "input_schema": {
+            "properties": {
+                "max_num": {
+                    "default": 100.0,
+                    "description": "Maximum for random generator (float)",
+                    "title": "Maximum",
+                    "type": "number"
+                },
+                "min_num": {
+                    "default": 0.0,
+                    "description": "Minimum for random generator (float)",
+                    "title": "Minimum",
+                    "type": "number"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "description": "IsDay Piece Output Model",
+            "properties": {
+                "number": {
+                    "default": 0.0,
+                    "description": "Random number (float)",
+                    "title": "Number",
+                    "type": "number"
+                }
+            },
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/RandomNumPiece"
     }
 }

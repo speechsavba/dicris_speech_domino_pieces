@@ -11,10 +11,11 @@ class ExampleSleepPiece(BasePiece):
         sleep(input_data.sleep_time)
         message = f"Sleep piece executed successfully for {input_data.sleep_time} seconds"
         self.logger.info(message)
-		output_file_path = f"{self.results_path}/sleeping.txt"
-		fout = open(output_file_path, "w")
-		fout.write(f"Sleeping for {input_data.sleep_time} seconds")
-		fout.close()
+        self.logger.info('Blablabla')
+        output_file_path = f"{self.results_path}/sleeping.txt"
+        fout = open(output_file_path, "w")
+        fout.write(f"Sleeping for {input_data.sleep_time} seconds")
+        fout.close()
 
         # Return output
         return OutputModel(

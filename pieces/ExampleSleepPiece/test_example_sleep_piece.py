@@ -10,3 +10,5 @@ def test_example_simple_piece():
     )
 
     assert output_data["message"] is not None
+
+test_example_simple_piece()

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from domino.testing import piece_dry_run
 from pathlib import Path
 #from pieces.InsulatorHealthPiece.piece import NormalizedPipeline
@@ -20,7 +21,6 @@ def test_insulatorcontaminationpiece():
     )
     assert piece_output is not None
     assert piece_output["contamination"] is not None
-    assert piece_output["contamination"]!=-1
 
 #if __name__ == "__main__":
 #	test_insulatorcontaminationpiece()

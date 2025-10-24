@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from domino.base_piece import BasePiece
 from .models import InputModel, OutputModel
 from io import BytesIO

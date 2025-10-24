@@ -1,5 +1,4 @@
 from pydantic import BaseModel, Field
-from enum import Enum
 
 class InputModel(BaseModel):
 	y: str = Field(

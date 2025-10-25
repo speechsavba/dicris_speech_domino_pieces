@@ -9,7 +9,9 @@ class Sleep2Piece(BasePiece):
 
         self.logger.info(f"Sleeping for {input_data.sleep_time} seconds")
         sleep(input_data.sleep_time)
+
         message = f"Sleep piece executed successfully for {input_data.sleep_time} seconds"
+
         # Return output
         return OutputModel(
             message=message,

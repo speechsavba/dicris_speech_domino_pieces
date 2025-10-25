@@ -1,24 +1,15 @@
 {
     "name": "Sleep2Piece",
-    "description": "This is an example of a simple Domino Piece that sleep for N seconds",
+    "description": "A Piece that sleeps for a given number of seconds.",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
-    "container_resources": {
-        "requests": {
-            "cpu": 100,
-            "memory": 128
-        },
-        "limits": {
-            "cpu": 500,
-            "memory": 512
-        }
-    },
     "tags": [
-        "Example"
+        "default",
+        "sleep"
     ],
     "style": {
-        "node_label": "Sleep2 Piece",
-        "icon_class_name": "fa-solid:database"
+        "node_label": "Sleep2",
+        "icon_class_name": "fa-solid:hourglass-start"
     }
 }

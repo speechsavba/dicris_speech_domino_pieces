@@ -9,7 +9,7 @@
             "CalcSumPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/dicris_speech_domino_pieces/dicris_speech_domino_pieces:0.1.2a-group0"
+        "source_image": "ghcr.io/dicris_speech_domino_pieces/dicris_speech_domino_pieces:0.1.2b-group0"
     },
     "group1": {
         "dependency": {
@@ -17,11 +17,12 @@
             "requirements_file": "requirements_0.txt"
         },
         "pieces": [
+            "SleepPiece",
             "ExampleSleepPiece",
             "RandomNumPiece",
             "InsulatorHealthPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/dicris_speech_domino_pieces/dicris_speech_domino_pieces:0.1.2a-group1"
+        "source_image": "ghcr.io/dicris_speech_domino_pieces/dicris_speech_domino_pieces:0.1.2b-group1"
     }
 }

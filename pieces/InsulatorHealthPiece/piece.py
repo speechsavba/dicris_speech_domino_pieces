@@ -73,6 +73,12 @@ class InsulatorHealthPiece(BasePiece):
 		self.logger.info(f"InsulatorHealthPiece FEATURES SHAPE: "+ str(feats.shape))
 		contamination_pred = self.do_prediction(feats)
 		self.logger.info('Prediction value {}'.format(contamination_pred))
+		raw_content = f"Prediction value of insulator health on scale 0-4 (0-clean 3-dirty) is: {contamination_pred}\n"
+		base64_content = base64.b64encode(raw_content.encode("utf-8")).decode("utf-8")
+		self.display_result = {
+			"file_type": "txt",
+			"base64_content": base64_content
+		}
 
 		# Return output
 		return OutputModel(

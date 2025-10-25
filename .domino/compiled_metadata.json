@@ -324,31 +324,22 @@
             "requirements_file": "requirements_0.txt"
         },
         "tags": [
-            "Example"
+            "default",
+            "sleep"
         ],
         "style": {
-            "node_label": "Sleep2 Piece",
+            "node_label": "Sleep2",
             "node_type": "default",
             "node_style": {
                 "backgroundColor": "#ebebeb"
             },
             "useIcon": true,
-            "icon_class_name": "fa-solid:database",
+            "icon_class_name": "fa-solid:hourglass-start",
             "iconStyle": {
                 "cursor": "pointer"
             }
         },
-        "description": "This is an example of a simple Domino Piece that sleep for N seconds",
-        "container_resources": {
-            "requests": {
-                "cpu": 100,
-                "memory": 128
-            },
-            "limits": {
-                "cpu": 500,
-                "memory": 512
-            }
-        },
+        "description": "A Piece that sleeps for a given number of seconds.",
         "input_schema": {
             "description": "Sleep Piece Input Model",
             "properties": {

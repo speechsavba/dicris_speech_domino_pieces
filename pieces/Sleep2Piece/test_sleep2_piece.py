@@ -1,11 +1,11 @@
 from domino.testing import piece_dry_run
 
-def test_example_sleep_piece():
+def test_sleep2_piece():
     input_data = dict(
         sleep_time=5
     )
     output_data = piece_dry_run(
-        "ExampleSleepPiece",
+        "Sleep2Piece",
         input_data,
     )
 

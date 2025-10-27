@@ -9,7 +9,7 @@
             "CalcSumPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2e-group0"
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2f-group0"
     },
     "group1": {
         "dependency": {
@@ -23,6 +23,6 @@
             "Sleep2Piece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2e-group1"
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2f-group1"
     }
 }

@@ -1,0 +1,15 @@
+{
+    "name": "InsulatorEnvironmentSoundsPiece",
+    "description": "A Piece that identifies environmental sounds.",
+    "dependency": {
+        "requirements_file": "requirements_1.txt"
+    },
+    "tags": [
+        "default",
+        "insulator"
+    ],
+    "style": {
+        "node_label": "Sound identification",
+        "icon_class_name": "ic:twotone-filter"
+    }
+}

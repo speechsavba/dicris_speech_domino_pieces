@@ -8,7 +8,7 @@
             "InsulatorEnvironmentSoundsPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2h-group0"
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2ii-group0"
     },
     "group1": {
         "dependency": {
@@ -20,7 +20,7 @@
             "CalcSumPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2h-group1"
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2ii-group1"
     },
     "group2": {
         "dependency": {
@@ -29,11 +29,12 @@
         },
         "pieces": [
             "SleepPiece",
+            "DicrisDatasetPiece",
             "RandomNumPiece",
             "InsulatorHealthPiece",
             "Sleep2Piece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2h-group2"
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2ii-group2"
     }
 }

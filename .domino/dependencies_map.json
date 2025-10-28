@@ -2,39 +2,14 @@
     "group0": {
         "dependency": {
             "dockerfile": null,
-            "requirements_file": "requirements_1.txt"
-        },
-        "pieces": [
-            "InsulatorEnvironmentSoundsPiece"
-        ],
-        "secrets": [],
-        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2ii-group0"
-    },
-    "group1": {
-        "dependency": {
-            "dockerfile": "Dockerfile_1",
-            "requirements_file": null
-        },
-        "pieces": [
-            "ExampleSineWavePiece",
-            "CalcSumPiece"
-        ],
-        "secrets": [],
-        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2ii-group1"
-    },
-    "group2": {
-        "dependency": {
-            "dockerfile": null,
             "requirements_file": "requirements_0.txt"
         },
         "pieces": [
-            "SleepPiece",
+            "InsulatorEnvironmentSoundsPiece",
             "DicrisDatasetPiece",
-            "RandomNumPiece",
-            "InsulatorHealthPiece",
-            "Sleep2Piece"
+            "InsulatorHealthPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2ii-group2"
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2j-group0"
     }
 }

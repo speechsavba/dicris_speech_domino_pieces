@@ -1,4 +1,68 @@
 {
+    "InsulatorEnvironmentSoundsPiece": {
+        "name": "InsulatorEnvironmentSoundsPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_1.txt"
+        },
+        "tags": [
+            "default",
+            "insulator"
+        ],
+        "style": {
+            "node_label": "Sound identification",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "ic:twotone-filter",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "A Piece that identifies environmental sounds.",
+        "input_schema": {
+            "properties": {
+                "y": {
+                    "default": "http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav",
+                    "description": "path to audio or URL to audio or sound read with librosa library and converted to a base64 encoded string.",
+                    "title": "audio to asses",
+                    "type": "string"
+                },
+                "sr": {
+                    "default": 192000,
+                    "description": "Sampling frequency of sound (integer)",
+                    "title": "Sampling frequency of sound",
+                    "type": "integer"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "top_class": {
+                    "title": "Top Class",
+                    "type": "string"
+                },
+                "top_prob": {
+                    "title": "Top Prob",
+                    "type": "number"
+                },
+                "top10": {
+                    "default": "unkown",
+                    "description": "Top 10 of sound classes",
+                    "title": "Top10",
+                    "type": "string"
+                }
+            },
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/InsulatorEnvironmentSoundsPiece"
+    },
     "ExampleSineWavePiece": {
         "name": "ExampleSineWavePiece",
         "dependency": {

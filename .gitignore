@@ -131,3 +131,8 @@ dmypy.json
 # jupyter
 .ipynb_checkpoints
 *.ipynb
+/dry_run_results/
+/pieces/InsulatorEnvironmentSoundsPiece/yamnet/yamnet_tst.py
+/pieces/InsulatorHealthPiece/svr_norm_pipeline.joblib
+/run_test.bat
+/pieces/InsulatorEnvironmentSoundsPiece/yamnet/README.md

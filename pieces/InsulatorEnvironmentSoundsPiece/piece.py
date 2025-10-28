@@ -53,10 +53,10 @@ class InsulatorEnvironmentSoundsPiece(BasePiece):
 
 		self.logger.info(f"InsulatorEnvironmentSoundsPiece IDENTIFICATION END")
 
-		self.logger.info(f'Prediction TOP {infered_class} with prob: {infered_prob}')
-		self.logger.info(f'Prediction TOP10 {top10}')
+		self.logger.info(f'Prediction TOP:\n{infered_class} with prob: {infered_prob}')
+		self.logger.info(f'Prediction TOP10:\n{top10}')
 
-		raw_content = f"Prediction TOP10 is: {top10}\n"
+		raw_content = f"Prediction TOP10 is:\n{top10}\n"
 		base64_content = base64.b64encode(raw_content.encode("utf-8")).decode("utf-8")
 		self.display_result = {
 			"file_type": "txt",

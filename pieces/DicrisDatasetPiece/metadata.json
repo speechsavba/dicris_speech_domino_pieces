@@ -1,0 +1,15 @@
+{
+    "name": "DicrisDatasetPiece",
+    "description": "Provide random audio files from DiCris",
+    "dependency": {
+        "requirements_file": "requirements_0.txt"
+    },
+    "tags": [
+        "default",
+        "datasets"
+    ],
+    "style": {
+        "node_label": "Dicris Dataset",
+        "icon_class_name": "lucide:toy-brick"
+    }
+}

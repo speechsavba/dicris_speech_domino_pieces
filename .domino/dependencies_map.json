@@ -10,6 +10,6 @@
             "InsulatorHealthPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2j-group0"
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.2jj-group0"
     }
 }

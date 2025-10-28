@@ -7,6 +7,6 @@ REGISTRY_NAME = "speechsavba"
 REPOSITORY_NAME = "dicris_speech_domino_pieces"
 REPOSITORY_LABEL = "dicris_speech_domino_pieces"
 
-# The version of this Pieces release
+# The version of this Pieces release 1
 # Attention: changing this will create a new release
 VERSION = "0.1.2k"

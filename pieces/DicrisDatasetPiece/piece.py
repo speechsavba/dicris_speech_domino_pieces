@@ -1,8 +1,5 @@
-from sklearn.datasets import load_iris, load_diabetes, load_digits, load_wine, load_breast_cancer
-import pandas as pd
 from domino.base_piece import BasePiece
 from .models import InputModel, OutputModel
-from pathlib import Path
 import random
 import base64
 

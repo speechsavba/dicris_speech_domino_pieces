@@ -1,7 +1,7 @@
 from domino.testing import piece_dry_run
 
 
-def test_dicrisdatasetpiece():
+def test_dicrisdataset_piece():
     dataset = 'random'
     input_data = dict(
         dataset=dataset

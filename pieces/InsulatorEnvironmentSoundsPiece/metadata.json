@@ -2,7 +2,7 @@
     "name": "InsulatorEnvironmentSoundsPiece",
     "description": "A Piece that identifies environmental sounds.",
     "dependency": {
-        "requirements_file": "requirements_1.txt"
+        "requirements_file": "requirements_0.txt"
     },
     "tags": [
         "default",

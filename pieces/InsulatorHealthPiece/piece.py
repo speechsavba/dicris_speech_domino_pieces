@@ -42,12 +42,12 @@ class InsulatorHealthPiece(BasePiece):
 
 	def piece_function(self, input_data: InputModel):
 
-				
+		print('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
 		self.logger.info(f"InsulatorHealthPiece START")
 		sr = input_data.sr
 		# Try to open image from file path or base64 encoded string
 		y = input_data.y
-
+		print('BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB')
 		max_path_size = 4096#int(os.pathconf('/', 'PC_PATH_MAX'))
 		if len(y) < max_path_size:
 			if y.startswith('http'):

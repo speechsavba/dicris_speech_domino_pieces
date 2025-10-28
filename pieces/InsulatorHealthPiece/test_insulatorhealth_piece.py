@@ -10,5 +10,6 @@ def test_insulatorcontamination_piece():
 		piece_name="InsulatorHealthPiece",
 		input_data=input_data
 	)
+
 	assert piece_output is not None
 	assert piece_output["contamination"] is not None

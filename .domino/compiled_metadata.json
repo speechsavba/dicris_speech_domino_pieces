@@ -1,4 +1,71 @@
 {
+    "DicrisDatasetPiece": {
+        "name": "DicrisDatasetPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_0.txt"
+        },
+        "tags": [
+            "default",
+            "datasets"
+        ],
+        "style": {
+            "node_label": "Dicris Dataset",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "lucide:toy-brick",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "Provide random audio files from DiCris",
+        "input_schema": {
+            "$defs": {
+                "DatasetFile": {
+                    "enum": [
+                        "http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav",
+                        "http://speech.savba.sk/DiCris/echo_20250715_094400_7B-0.wav",
+                        "http://speech.savba.sk/DiCris/echo_20250716_104301_D5.wav",
+                        "random"
+                    ],
+                    "title": "DatasetFile",
+                    "type": "string"
+                }
+            },
+            "properties": {
+                "dataset": {
+                    "$ref": "#/$defs/DatasetFile",
+                    "default": "",
+                    "title": "Wav name"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "file_path": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "default": null,
+                    "title": "File path"
+                }
+            },
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/DicrisDatasetPiece"
+    },
     "InsulatorEnvironmentSoundsPiece": {
         "name": "InsulatorEnvironmentSoundsPiece",
         "dependency": {
@@ -63,77 +130,6 @@
         "secrets_schema": null,
         "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/InsulatorEnvironmentSoundsPiece"
     },
-    "DicrisDatasetPiece": {
-        "name": "DicrisDatasetPiece",
-        "dependency": {
-            "dockerfile": null,
-            "requirements_file": "requirements_0.txt"
-        },
-        "tags": [
-            "default",
-            "datasets"
-        ],
-        "style": {
-            "node_label": "Dicris Dataset",
-            "node_type": "default",
-            "node_style": {
-                "backgroundColor": "#ebebeb"
-            },
-            "useIcon": true,
-            "icon_class_name": "lucide:toy-brick",
-            "iconStyle": {
-                "cursor": "pointer"
-            }
-        },
-        "description": "Provide random audio files from DiCris",
-        "input_schema": {
-            "$defs": {
-                "DatasetFile": {
-                    "enum": [
-                        "http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav",
-                        "http://speech.savba.sk/DiCris/echo_20250715_094400_7B-0.wav",
-                        "http://speech.savba.sk/DiCris/echo_20250716_104301_D5.wav",
-                        "random"
-                    ],
-                    "title": "DatasetFile",
-                    "type": "string"
-                }
-            },
-            "properties": {
-                "dataset": {
-                    "allOf": [
-                        {
-                            "$ref": "#/$defs/DatasetFile"
-                        }
-                    ],
-                    "default": "",
-                    "title": "Wav name"
-                }
-            },
-            "title": "InputModel",
-            "type": "object"
-        },
-        "output_schema": {
-            "properties": {
-                "file_path": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "default": null,
-                    "title": "File path"
-                }
-            },
-            "title": "OutputModel",
-            "type": "object"
-        },
-        "secrets_schema": null,
-        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/DicrisDatasetPiece"
-    },
     "InsulatorHealthPiece": {
         "name": "InsulatorHealthPiece",
         "dependency": {
@@ -157,6 +153,16 @@
             }
         },
         "description": "A Piece that predicts insulator health from sound.",
+        "container_resources": {
+            "requests": {
+                "cpu": 100,
+                "memory": 128
+            },
+            "limits": {
+                "cpu": 500,
+                "memory": 512
+            }
+        },
         "input_schema": {
             "properties": {
                 "y": {

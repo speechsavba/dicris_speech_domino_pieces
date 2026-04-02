@@ -14,5 +14,7 @@ RUN pip install --no-cache-dir scipy librosa unidecode phonemizer Cython
 RUN pip install --no-cache-dir librosa onnxruntime
 RUN pip install --no-cache-dir joblib scikit-learn==1.7.2
 #RUN pip install --no-cache-dir resampy tensorflow soundfile tf-keras
-RUN cd /home/domino/pieces_repository/pieces/SpeechSynthesisPiece/monotonic_align/ && python setup.py build_ext --inplace
+#RUN cd /home/domino/pieces_repository/pieces/SpeechSynthesisPiece/monotonic_align/ && python setup.py build_ext --inplace
+WORKDIR /home/domino/pieces_repository/pieces/SpeechSynthesisPiece/monotonic_align/
+RUN python setup.py build_ext --inplace
 

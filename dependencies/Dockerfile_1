@@ -7,6 +7,7 @@ COPY config.toml domino/pieces_repository/
 COPY pieces domino/pieces_repository/pieces
 COPY .domino domino/pieces_repository/.domino
 
+
 # Install specific dependencies in domino_env virtual environment
 RUN pip install --no-cache-dir numpy==1.23.5
 RUN pip install torch --extra-index-url https://download.pytorch.org/whl/cpu
@@ -14,5 +15,6 @@ RUN pip install --no-cache-dir scipy librosa unidecode phonemizer Cython
 RUN pip install --no-cache-dir librosa onnxruntime
 RUN pip install --no-cache-dir joblib scikit-learn==1.7.2
 #RUN pip install --no-cache-dir resampy tensorflow soundfile tf-keras
-RUN cd /home/domino/pieces_repository/pieces/SpeechSynthesisPiece/monotonic_align/ && python setup.py build_ext --inplace
+WORKDIR /home/domino/pieces_repository/pieces/SpeechSynthesisPiece/monotonic_align/
+RUN python setup.py build_ext --inplace
 

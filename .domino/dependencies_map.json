@@ -8,8 +8,8 @@
             "DicrisDatasetPiece",
             "InsulatorEnvironmentSoundsPiece",
             "InsulatorHealthPiece",
-            "SpeechStressPiece",
-            "TTSPiece"
+            "SpeechProcessingPiece",
+            "SpeechSynthesisPiece"
         ],
         "secrets": []
     }

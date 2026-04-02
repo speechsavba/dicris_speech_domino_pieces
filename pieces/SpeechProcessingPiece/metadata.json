@@ -1,6 +1,6 @@
 {
-    "name": "SpeechStressPiece",
-    "description": "A Piece that predicts level of stress in speech in range 0-100",
+    "name": "SpeechProcessingPiece",
+    "description": "Speech pocessing piece",
     "dependency": {
         "dockerfile": "Dockerfile_1"
     },
@@ -19,7 +19,7 @@
         "stress"
     ],
     "style": {
-        "node_label": "Stress in speech",
+        "node_label": "Speech processing",
         "icon_class_name": "ic:twotone-filter"
     }
 }

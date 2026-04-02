@@ -196,8 +196,8 @@
         "secrets_schema": null,
         "source_url": null
     },
-    "SpeechStressPiece": {
-        "name": "SpeechStressPiece",
+    "SpeechProcessingPiece": {
+        "name": "SpeechProcessingPiece",
         "dependency": {
             "dockerfile": "Dockerfile_1",
             "requirements_file": null
@@ -207,7 +207,7 @@
             "stress"
         ],
         "style": {
-            "node_label": "Stress in speech",
+            "node_label": "Speech processing - ASR, Speaker identification, Stress detection",
             "node_type": "default",
             "node_style": {
                 "backgroundColor": "#ebebeb"
@@ -280,8 +280,8 @@
         "secrets_schema": null,
         "source_url": null
     },
-    "TTSPiece": {
-        "name": "TTSPiece",
+    "SpeechSynthesisPiece": {
+        "name": "SpeechSynthesisPiece",
         "dependency": {
             "dockerfile": "Dockerfile_1",
             "requirements_file": null

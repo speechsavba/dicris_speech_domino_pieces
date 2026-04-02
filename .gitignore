@@ -137,3 +137,4 @@ dmypy.json
 /run_test.bat
 /pieces/InsulatorEnvironmentSoundsPiece/yamnet/README.md
 /home_shared_storage/
+/pieces/SpeechSynthesisPiece/dry_run_results/

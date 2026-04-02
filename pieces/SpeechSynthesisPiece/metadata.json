@@ -1,0 +1,15 @@
+{
+    "name": "TTSPiece",
+    "description": "Synthesise audio file from text in slovak",
+    "dependency": {
+		"dockerfile": "Dockerfile_1"
+    },
+    "tags": [
+        "default",
+        "datasets"
+    ],
+    "style": {
+        "node_label": "Slovak TTS",
+        "icon_class_name": "lucide:toy-brick"
+    }
+}

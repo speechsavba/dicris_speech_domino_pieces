@@ -1,0 +1,782 @@
+# -----  S K R A T K Y  A  Z N A È K Y  ----
+#+ plus
+#- mínus
+#= rovná sa
+#/ lomeno
+#@ zavináè
+#; bodkoèiarka
+#( zátvorka
+#) koniec zátvorky
+#[ hranatá zátvorka
+#] koniec hranatej zátvorky
+#{ zloená zátvorka
+#} koniec zloenej zátvorky
+#& end
+#* hviezdièka
+#% percent
+#_ dolná èiarka
+#' apostrof
+#" úvodzovky hore
+#\ obrátené lomítko
+#  ---  TITULY ---
+#^sro$ eseró
+#^http hátétépé
+#^vvv vévévé
+#^ftp eftépé
+#^ing$ ininier
+#^bc$ bakalár
+#^doc$ docent
+#^prof$ profesor
+#^dr$ doktor
+#^phdr$ doktor
+#^judr$ doktor
+#^mudr$ doktor
+#^mvdr$ doktor
+#^phd$ péhádé
+#^csc$ kandidátvied
+#^drsc$ doktorvied
+#
+#----------  èítanie de te ne le v dvojtvaroch podla frekvecie ----------
+#
+# -kliati, sıti, -smiati, poondiati, -li, -ni... -te, -le, -ne
+#
+krásni$ krásny
+normálni$ normálny
+poriadni$ poriadny
+rôzni$ rôzny
+#
+#----------  èítanie te v adjektívach stredného rodu a pluráli en. rodu --------
+#
+iate$ iatì
+vraciatì$ vraciate  # pre-, od-, vy-
+staviatì$ staviate
+meriatì$ meriate
+veèeriatì$ veèeriate
+klaniatì$ klaniate
+voniatì$ voniate
+poièiatì$ poièiate
+obraciatì$ obraciate
+zavadziatì$ zavadziate
+vešiatì$ vešiate
+ciciatì$ ciciate
+šieste šiestì
+#
+#--------- prídavné mená v pluráli zakoncené na "(d|t|n|l)í", èítajúce sa ako "ı"
+#- sú usporiadané ako v retrográdnom slovníku (bez 'ch'), okrem vınimiek,
+#- èítajúcich sa mäkko, ktoré treba uvádza vopred, aby nedochádzalo k zmene 'ı' na 'í'
+#
+omladí$ omlaïí
+mladí$ mladı
+voradí$ voradı
+horadí$ horadı
+oradí$ oradı
+toradí$ toradı
+bledí$ bledı
+hnedí$ hnedı
+škaredí$ škaredı
+šedí$ šedı
+morodí$ morodı  # domorodí
+norodí$ norodı  # èinorodí, rôznorodí
+dzorodí$ dzorodı  # cudzorodí
+vorodí$ vorodı  # ivorodí
+corodí$ corodı  # vajcorodí
+úrodí$ úrodı  # súrodí
+hrdí$ hrdı
+#tvrdí$ tvrdı   # dvojtvar - èo je èastejšie?
+chudí$ chudı
+kadí$ kadı
+zúfalí$ zúfalı
+spomalí$ spoma¾í
+malí$ malı  # pomalí
+zdokonalí$ zdokona¾í
+nalí$ nalı  # dokonalí, znalí
+ospalí$ ospalı
+stalí$ stalı  # zaostalí, pozostalí
+trvalí$ trvalı  # vytrvalí
+bıvalí$ bıvalı
+padlí$ padlı
+sadlí$ sadlı  # usadlí
+podlí$ podlı
+zbabelí$ zbabelı
+ocelí$ oce¾í  # zocelí
+zacelí$ zace¾í
+scelí$ sce¾í
+celí$ celı
+bdelí$ bdelı
+osamelí$ osamelı
+uvedomelí$ uvedomelı
+osmelí$ osme¾í  # posmelí
+smelí$ smelı
+nelí$ nelı  # domnelí, ojedinelí, zhavranelí, schudobnelí
+spelí$ spelı  # dospelí, vyspelí
+strelí$ stre¾í
+relí$ relı  # zrelí, zomrelí, osirelí, vrelí
+obveselí$ obvese¾í
+rozveselí$ rozvese¾í
+veselí$ veselı
+citlivelí$ citlivelı  # precitlivelí
+skvelí$ skvelı
+zbehlí$ zbehlı
+zvrhlí$ zvrhlı
+spôsobilí$ spôsobilı
+èilí$ èilı  # pokroèilí, zmäkèilí
+milí$ milı
+nilí$ nilı  # previnilí, spanilí
+pilí$ pilı  # opilí
+zdvorilí$ zdvorilı
+tilí$ tilı  # uš¾achtilí, zenštilí, rozpustilí
+ilí$ ilı  # zaslúilí, otuilí
+^teplí$ teplı
+^otrlí$ otrlı
+^nevrlí$ nevrlı
+vislí$ vislı  # závislí, súvislí
+^kyslí$ kyslı
+došlí$ došlı  # predošlí
+^svetlí$ svetlı
+^èulí$ èulı  # ^ - pretoe korèulí
+granulí$ granu¾í
+nulí$ nulı  # minulí, zosnulí, strnulí, (u)plynulí
+^zlí$ zlı  # ^ - pretoe ríbezlí, zauzlí a pod.
+oplzlí$ oplzlı
+prešibaní$ prešibanı
+zazobaní$ zazobanı
+iadaní$ iadanı
+ustráchaní$ ustráchanı
+otrhaní$ otrhanı
+vy¾akaní$ vy¾akanı
+vyobliekaní$ vyobliekanı
+prefíkaní$ prefíkanı
+nafúkaní$ nafúkanı
+odhodlaní$ odhodlanı
+vzdelaní$ vzdelanı
+ostrie¾aní$ ostrie¾anı
+posielaní$ posielanı
+vysielaní$ vysielanı
+privolaní$ privolanı
+planí$ planı
+poslaní$ poslanı
+klamaní$ klamanı
+spomínaní$ spomínanı
+zamestnaní$ zamestnanı  # dvojtvar!
+vyèerpaní$ vyèerpanı
+zasypaní$ zasypanı
+vybraní$ vybranı
+privítaní$ privítaòí  # ? nı
+uvítaní$ uvítaòí  # ? nı
+zvítaní$ zvítaòí
+vítaní$ vítanı
+trestaní$ trestanı
+ostaní$ ostanı
+prichystaní$ prichystanı
+pripútaní$ pripútanı
+spútaní$ spútanı
+nahnevaní$ nahnevanı
+rozhnevaní$ rozhnevanı
+maskovaní$ maskovanı  # zamaskovaní
+deformovaní$ deformovanı
+klonovaní$ klonovanı  # dvojtvar!
+prizvaní$ prizvanı
+takzvaní$ takzvanı
+viazaní$ viazanı  # zaviazaní
+odkázaní$ odkázanı
+uèební$ uèebnı
+volební$ volebnı
+hanební$ hanebnı  # nehanební
+farební$ farebnı
+potrební$ potrebnı
+stavební$ stavebnı
+svadobní$ svadobnı
+napodobní$ napodobòí
+podobní$ podobnı
+ochudobní$ ochudobòí
+zhudobní$ zhudobòí
+hudobní$ hudobnı  # chudobní
+drobní$ drobnı
+vırobní$ vırobnı
+násobní$ násobnı  # dvoj-, troj-, viac-, mnoho- 
+osobní$ osobnı
+skúšobní$ skúšobnı
+sluobní$ sluobnı
+zubní$ zubnı
+spochybní$ spochybòí
+znehybní$ znehybòí
+hybní$ hybnı  # nehybní, pochybní, bezchybní, ohybní
+^lacní$ lacnı
+zovšeobecní$ zovšeobecòí
+obecní$ obecnı  # všeobecní
+umocní$ umocòí
+odmocní$ odmocòí
+splnomocní$ splnomocòí
+bezmocní$ bezmocnı
+zmocní$ zmocòí
+mocní$ mocnı  # pomocní, malomocní, nemocní
+oxidaèní$ oxidaènı
+vïaèní$ vïaènı
+rekreaèní$ rekreaènı
+komunikaèní$ komunikaènı
+laèní$ laènı  # krvilaèní, oscilaèní, inflaèní, populaèní
+informaèní$ informaènı
+vıznaèní$ vıznaènı
+generaèní$ generaènı
+operaèní$ operaènı
+imigraèní$ imigraènı
+zázraèní$ zázraènı
+námesaèní$ námesaènı
+orientaèní$ orientaènı
+reprezentaèní$ reprezentaènı
+sebestaèní$ sebestaènı
+panovaèní$ panovaènı
+organizaèní$ organizaènı
+senzaèní$ senzaènı
+srdeèní$ srdeènı
+bájeèní$ bájeènı
+taneèní$ taneènı
+jedineèní$ jedineènı
+slneèní$ slneènı
+koneèní$ koneènı
+bezpeèní$ bezpeènı
+vıreèní$ vıreènı
+veèní$ veènı
+tradièní$ tradiènı
+dedièní$ dediènı
+koalièní$ koaliènı
+stolièní$ stoliènı
+poulièní$ pouliènı
+rozlièní$ rozliènı
+hranièní$ hraniènı  # zahranièní, pohranièní
+nemocnièní$ nemocniènı
+eleznièní$ elezniènı
+matièní$ matiènı
+investièní$ investiènı
+polovièní$ poloviènı
+opozièní$ opoziènı
+akèní$ akènı  # redakèní, reakèní
+protekèní$ protekènı
+funkèní$ funkènı
+produkèní$ produkènı
+finanèní$ finanènı
+renesanèní$ renesanènı
+konkurenèní$ konkurenènı
+konvenèní$ konvenènı
+provinèní$ provinènı
+uskutoèní$ uskutoèòí  # jediná vınimka pre -oèní (?)
+oèní$ oènı  # (*-)roèní, (*-)noèní, spoloèní, vınimoèní, sviatoèní,
+# statoèní, skutoèní, útoèní, uitoèní, smútoèní, zbytoèní, nadbytoèní,
+# nároèní, boèní, vianoèní - je tu ve¾a slov!
+komerèní$ komerènı
+hluèní$ hluènı
+revoluèní$ revoluènı
+rozluèní$ rozluènı  # nerozluèní
+struèní$ struènı
+zruèní$ zruènı
+odtuèní$ odtuèòí
+tuèní$ tuènı  # konštituèní, inštituèní
+dotyèní$ dotyènı
+záhadní$ záhadnı
+hladní$ hladnı  # chladní
+bezoh¾adní$ bezoh¾adnı
+dôkladní$ dôkladnı
+nápadní$ nápadnı
+západní$ západnı
+prípadní$ prípadnı
+poradní$ poradòí  # ? nı
+radní$ radnı  # (ná-, vı-, zá-)hradní, úradní, (be-)zradní, podradní
+zadní$ zadnı
+smädní$ smädnı
+nezbední$ nezbednı
+poslední$ poslednı
+dôslední$ dôslednı
+prední$ prednı  # poprední
+strední$ strednı  # prostrední, bezprostrední
+neposední$ neposednı
+susední$ susednı
+všední$ všednı
+zodpovední$ zodpovednı
+vraední$ vraednı  # samovraední
+invalidní$ invalidnı
+paranoidní$ paranoidnı
+slobodní$ slobodnı
+# --- vınimky -hodní:
+zvıhodní$ zvıhodòí  # nezvıhodní
+znevıhodní$ znevıhodòí
+pochodní$ pochodòí
+spriechodní$ spriechodòí
+# ---
+hodní$ hodnı  # náhodní, obchodní, vıchodní, prechodní, vhodní,
+# dôveryhodní, ctihodní, rozhodní, úctyhodní, obdivuhodní,
+# nehodní, nevhodní, nanièhodní, zhodní - je tu ve¾a slov!
+odškodní$ odškodòí
+zneškodní$ zneškodòí
+škodní$ škodnı  # neškodní, záškodní
+oplodní$ oplodòí
+lodní$ lodnı  # (ne-)plodní
+odnárodní$ odnárodòí
+znárodní$ znárodòí
+zúrodní$ zúrodòí
+rodní$ rodnı  # (medzi-)národní, prírodní
+(po|od|za|roz|odô|zdô)vodní\b \1vodòí
+vodní$ vodnı  # obvodní, pôvodní, sprievodní, úvodní, zvodní, závodní
+rdní$ rdnı  # štandardní, avantgardní, hazardní, milosrdní, absurdní
+èudní$ èudnı
+nudní$ nudnı
+oslabení$ oslabenı
+zahanbení$ zahanbenı
+zadubení$ zadubenı
+za¾úbení$ za¾úbenı
+ob¾úbení$ ob¾úbenı
+zas¾úbení$ zas¾úbenı
+pris¾úbení$ pris¾úbenı
+uvelièení$ uvelièenı
+znièení$ znièenı
+vycvièení$ vycvièenı
+rozhorèení$ rozhorèenı
+poškodení$ poškodenı
+rodení$ rodenı
+utajení$ utajenı
+ozbrojení$ ozbrojenı
+vzdialení$ vzdialenı
+šialení$ šialenı
+vyškolení$ vyškolenı
+#zvolení$ zvoleòí  # dvojtvar!, èo je èastejšie?
+povolení$ povoleòí  # dvojtvar!
+odvolení$ odvoleòí
+navolení$ navoleòí
+volení$ volenı  # vyvolení
+ohromení$ ohromenı
+poranení$ poraneòí  # dvojtvar!
+zranení$ zraneòí  # dvojtvar!
+ranení$ ranenı  # vyhranení
+chránení$ chránenı  # zachránení
+zaneprázdnení$ zaneprázdnenı
+odmenení$ odmenenı
+uvo¾není$ uvo¾nenı
+zronení$ zronenı
+umiernení$ umiernenı
+rozvášnení$ rozvášnenı
+zúèastnení$ zúèastnenı
+oprávnení$ oprávnenı
+oduševnení$ oduševnenı
+ovplyvnení$ ovplyvnenı
+zaslepení$ zaslepenı
+rozjarení$ rozjarenı
+poverení$ poverenı
+rozzúrení$ rozzúrenı
+prihlásení$ prihlásenı
+zdesení$ zdesenı
+unesení$ unesenı
+skúsení$ skúsenı
+roztrúsení$ roztrúsenı
+zosobášení$ zosobášenı
+zaprášení$ zaprášenı
+nadšení$ nadšenı
+vznešení$ vznešenı
+natešení$ natešenı
+potešení$ potešenı
+ukrátení$ ukrátenı
+zmätení$ zmätenı
+zasvätení$ zasvätenı
+ctení$ ctenı
+zanietení$ zanietenı
+osvietení$ osvietenı
+spotení$ spotenı
+urastení$ urastenı
+ustarostení$ ustarostenı
+znechutení$ znechutenı
+preslávení$ preslávenı
+blahoslavení$ blahoslavenı
+unavení$ unavenı
+precitlivení$ precitlivenı
+#oivení$ oiveòí  # dvojtvar!, èo je èastejšie?
+ivení$ ivenı  # podvıivení
+oslovení$ oslovenı
+èervení$ èervenı
+nakazení$ nakazenı
+skazení$ skazenı
+zarazení$ zarazenı
+zobrazení$ zobrazenı
+porazení$ porazenı
+urazení$ urazenı
+obmedzení$ obmedzenı
+vymedzení$ vymedzenı
+prirodzení$ prirodzenı
+urodzení$ urodzenı
+odcudzení$ odcudzenı
+hrození$ hrozenı  # (ne-)ohrození (dvojtvar!), zhrození
+váení$ váenı
+vrchní$ vrchnı  # povrchní
+^iní$ inı
+jediní$ jedinı
+policajní$ policajnı
+obyèajní$ obyèajnı
+zvyèajní$ zvyèajnı
+poddajní$ poddajnı
+predajní$ predajnı
+údajní$ údajnı
+krajní$ krajnı
+^tajní$ tajnı
+¾ahostajní$ ¾ahostajnı
+nádejní$ nádejnı  # beznádejní
+^verejní$ verejnı
+neochvejní$ neochvejnı
+prérijní$ prérijnı
+misijní$ misijnı
+bohabojní$ bohabojnı
+priebojní$ priebojnı
+vıbojní$ vıbojnı
+pokojní$ pokojnı  # spokojní
+zbrojní$ zbrojnı
+strojní$ strojnı
+dôstojní$ dôstojnı
+pekní$ peknı
+skalní$ skalnı
+pohodlní$ pohodlnı
+èelní$ èelnı
+divadelní$ divadelnı
+pravidelní$ pravidelnı
+pekelní$ pekelnı
+myselní$ myselnı  # priemyselní, zmyselní, dômyselní
+myse¾ní$ myse¾nı  # dobro-, zlo-, slabo-, márno-, ¾ahko-
+# --- vınimky -te¾ní:
+sporite¾ní$ sporite¾òí
+podate¾ní$ podate¾òí
+pozorovate¾ní$ pozorovate¾òí
+kazate¾ní$ kazate¾òí
+zvidite¾ní$ zvidite¾òí
+znevidite¾ní$ znevidite¾òí
+# ---
+te¾ní$ te¾nı  # (ne-)vidite¾ní, zranite¾ní, nedotknute¾ní,
+# (ne-)smrte¾ní, (ne-)prijate¾ní, ... - ve¾a slov!
+# --- vınimky -ilní:
+posilní$ posilòí
+zosilní$ zosilòí
+znásilní$ znásilòí
+smilní$ smilòí
+# ---
+ilní$ ilnı  # labilní, stabilní, debilní, mobilní, flexibilní, kompatibilní,
+# silní, násilní, pilní, agilní, senilní, civilní, servilní, sterilní,
+# detailní, textilní - ve¾a slov!
+dolní$ dolnı  # odolní
+vrcholní$ vrcholnı
+stolní$ stolnı  # kostolní
+uvo¾ní$ uvo¾òí
+zvo¾ní$ zvo¾òí
+o¾ní$ o¾nı  # (dobro-)vo¾ní, (cez-)po¾ní, reho¾ní
+duchaplní$ duchaplnı
+úplní$ úplnı
+oh¾aduplní$ oh¾aduplnı
+potulní$ potulnı
+náchylní$ náchylnı
+omylní$ omylnı
+reklamní$ reklamnı
+vıznamní$ vıznamnı
+zjemní$ zjemòí
+spríjemní$ spríjemòí
+znepríjemní$ znepríjemòí
+jemní$ jemnı  # príjemní, dojemní, objemní
+firemní$ firemnı
+^temní$ temnı
+úprimní$ úprimnı
+zimní$ zimnı
+nièomní$ nièomnı
+nájomní$ nájomnı
+tajomní$ tajomnı
+neoblomní$ neoblomnı
+vierolomní$ vierolomnı
+ohromní$ ohromnı
+skromní$ skromnı
+súkromní$ súkromnı
+prítomní$ prítomnı
+reformní$ reformnı
+vıskumní$ vıskumnı
+rozumní$ rozumnı
+anonymní$ anonymnı
+nní$ nnı  # (po-, ne-)vinní, ranní, bezbranní,  obranní, -stranní, ochranní,
+# cenní, denní, kamenní, (bez-)menní, èinní, rodinní, zákonní, vıkonní,
+# pohostinní, jaskynní, bezúhonní, korunní - ve¾a slov!
+^oní$ onı
+vtipní$ vtipnı
+schopní$ schopnı
+spupní$ spupnı
+sprístupní$ sprístupòí
+prístupní$ prístupnı
+ústupní$ ústupnı  # neústupní
+vıtvarní$ vıtvarnı
+veèerní$ veèernı
+poèerní$ poèernı
+moderní$ modernı
+malicherní$ malichernı
+nádherní$ nádhernı
+èinoherní$ èinohernı
+zákerní$ zákernı
+priemerní$ priemernı
+operní$ opernı
+príšerní$ príšernı
+charakterní$ charakternı
+interní$ internı
+externí$ externı
+verní$ vernı  # dôverní, severní, neverní
+mizerní$ mizernı
+odborní$ odbornı
+strieborní$ striebornı
+vıborní$ vıbornı
+horní$ hornı
+pokorní$ pokornı
+námorní$ námornı
+odporní$ odpornı
+vnútorní$ vnútornı
+dvorní$ dvornı
+svorní$ svornı
+pozorní$ pozornı
+vzorní$ vzornı
+opatrní$ opatrnı
+doèasní$ doèasnı
+súèasní$ súèasnı
+^jasní$ jasnı
+úasní$ úasnı
+zalesní$ zalesòí
+odlesní$ odlesòí
+plesní$ plesòí
+stelesní$ stelesòí
+lesní$ lesnı  # telesní, noblesní
+okresní$ okresnı
+presní$ presnı
+kompromisní$ kompromisnı  # nekompromisní
+úprosní$ úprosnı  # neúprosní
+drsní$ drsnı
+hnusní$ hnusnı
+samopašní$ samopašnı
+strašní$ strašnı
+dnešní$ dnešnı
+prospešní$ prospešnı
+úspešní$ úspešnı
+odlišní$ odlišnı
+rozkošní$ rozkošnı
+falošní$ falošnı
+vıbušní$ vıbušnı
+ve¾kodušní$ ve¾kodušnı
+zavzdušní$ zavzdušòí
+odvzdušní$ odvzdušòí
+prevzdušní$ prevzdušòí
+vzdušní$ vzdušnı
+slušní$ slušnı  # príslušní, (ne-)poslušní, neslušní
+pyšní$ pyšnı
+vyšní$ vyšnı  # zvyšní
+èatní$ èatnı
+udatní$ udatnı
+zdatní$ zdatnı
+#platní$ platnı  # dvojtvar!, èastejšie asi platòí
+^poplatní$ poplatnı
+právoplatní$ právoplatnı
+úplatní$ úplatnı
+bezplatní$ bezplatnı
+obratní$ obratnı
+spratní$ spratnı  # nespratní
+márnotratní$ márnotratnı
+osamostatní$ osamostatòí
+statní$ statnı  # ostatní, samostatní, podstatní
+klebetní$ klebetnı
+obetní$ obetnı
+príèetní$ príèetnı  # nepríèetní
+poèetní$ poèetnı  # nepoèetní, nespoèetní
+detní$ detnı  # bezdetní
+š¾achetní$ š¾achetnı
+majetní$ majetnı
+letní$ letnı  # kompletní, baletní, toaletní, záletní
+obozretní$ obozretnı
+osobitní$ osobitnı
+súcitní$ súcitnı
+bezcitní$ bezcitnı
+realitní$ realitnı
+kvalitní$ kvalitnı
+elitní$ elitnı
+majoritní$ majoritnı
+minoritní$ minoritnı
+insitní$ insitnı
+univerzitní$ univerzitnı
+taktní$ taktnı
+perfektní$ perfektnı
+korektní$ korektnı
+elegantní$ elegantnı
+arogantní$ arogantnı
+galantní$ galantnı
+brilantní$ brilantnı
+ambulantní$ ambulantnı
+šarmantní$ šarmantnı
+dominantní$ dominantnı
+tolerantní$ tolerantnı
+militantní$ militantnı
+razantní$ razantnı
+impozantní$ impozantnı
+stopercentní$ stopercentnı
+inteligentní$ inteligentnı
+kovalentní$ kovalentnı
+excelentní$ excelentnı
+parlamentní$ parlamentnı
+temperamentní$ temperamentnı
+prominentní$ prominentnı
+kompetentní$ kompetentnı
+rezistentní$ rezistentnı
+solventní$ solventnı
+robotní$ robotnı
+bigotní$ bigotnı
+ochotní$ ochotnı
+gramotní$ gramotnı
+samotní$ samotnı
+jednotní$ jednotnı
+hodnotní$ hodnotnı  # plnohodnotní
+èistotní$ èistotnı
+zdravotní$ zdravotnı
+ivotní$ ivotnı  # doivotní, celoivotní
+prvotní$ prvotnı
+rezortní$ rezortnı
+úèastní$ úèastnı
+šastní$ šastnı
+cestní$ cestnı  # pocestní
+èestní$ èestnı  # poèestní, neèestní
+povestní$ povestnı
+nezvestní$ nezvestnı
+ozajstní$ ozajstnı
+radostní$ radostnı
+kostní$ kostnı
+rıchlostní$ rıchlostnı
+zlostní$ zlostnı
+cnostní$ cnostnı
+bezpeènostní$ bezpeènostnı
+bezstarostní$ bezstarostnı
+príleitostní$ príleitostnı
+¾útostní$ ¾útostnı  # ne¾útostní
+krstní$ krstnı
+robustní$ robustnı
+zištní$ zištnı  # nezištní
+chutní$ chutnı  # nechutní
+mohutní$ mohutnı
+absolutní$ absolutnı
+smutní$ smutnı
+vyhnutní$ vyhnutnı  # nevyhnutní
+ukrutní$ ukrutnı
+odbytní$ odbytnı  # neodbytní
+násytní$ násytnı  # nenásytní
+zábavní$ zábavnı
+hlavní$ hlavnı  # pohlavní, úhlavní; pozor! - aj hlavòí
+únavní$ únavnı  # neúnavní
+mravní$ mravnı
+dopravní$ dopravnı
+otravní$ otravnı
+málovravní$ málovravnı
+prístavní$ prístavnı
+ústavní$ ústavnı
+vıstavní$ vıstavnı
+cirkevní$ cirkevnı
+^pevní$ pevnı
+duševní$ duševnı
+naivní$ naivnı
+divní$ divnı  # podivní
+protivní$ protivnı
+pracovní$ pracovnı
+koèovní$ koèovnı
+nasledovní$ nasledovnı
+úschovní$ úschovòí
+chovní$ chovnı  # duchovní, vıchovní
+bojovní$ bojovnı
+šikovní$ šikovnı
+milovní$ milovnı  # poriadku-, mieru-
+usilovní$ usilovnı
+# --- vınimky -rovní:
+úrovní$ úrovòí
+vıvarovní$ vıvarovòí
+opatrovní$ opatrovòí
+ošetrovní$ ošetrovòí
+vyšetrovní$ vyšetrovòí
+zborovní$ zborovòí
+# ---
+rovní$ rovnı  # seberovní, ostrovní, vandrovní, èarovní
+cestovní$ cestovnı
+poštovní$ poštovnı
+krvní$ krvnı  # po-, èisto-, chladno-, horko-, plno-
+zmluvní$ zmluvnı
+vplyvní$ vplyvnı
+ortodoxní$ ortodoxnı
+dôrazní$ dôraznı
+vırazní$ vıraznı
+víazní$ víaznı
+hrozní$ hroznı
+príbuzní$ príbuznı
+vlaní$ vlanı
+bení$ benı
+není$ nenı  # snení
+lúpení$ lúpenı
+dlní$ dlnı
+boní$ bonı  # zboní, náboní, poboní, bezboní
+umoní$ umoòí
+znemoní$ znemoòí
+moní$ monı  # zámoní, nemoní, ve¾komoní
+osoní$ osonı
+juní$ junı
+úsluní$ úslunı
+pruní$ prunı
+bradatí$ bradatı
+obohatí$ obohaí
+bohatí$ bohatı
+najatí$ najatı
+plecnatí$ plecnatı
+enatí$ enatı
+svalnatí$ svalnatı
+okuliarnatí$ okuliarnatı
+húevnatí$ húevnatı
+strapatí$ strapatı
+^krpatí$ krpatı
+spatí$ spatı  # prispatí, rozospatí, (ne-)vyspatí
+#vybratí$ vybratı
+oratí$ oratı
+plešatí$ plešatı
+zaatí$ zaatı
+ustatí$ ustatı
+fúzatí$ fúzatı
+#vzatí$ vzatı
+naslovovzatí$ naslovovzatı
+maloletí$ maloletı
+plnoletí$ plnoletı
+#bití$ bitı
+osobití$ osobitı
+zbití$ zbitı
+rozpaèití$ rozpaèitı
+oèití$ oèitı
+urèití$ urèitı
+zavalití$ zavalitı
+okolití$ okolitı
+svedomití$ svedomitı
+rozmanití$ rozmanitı
+znamenití$ znamenitı
+#napití$ napitı
+podnapití podnapitı
+dopití$ dopií
+opití$ opitı
+spití$ spitı
+pracovití$ pracovitı
+leití$ leitı  # dôleití, náleití
+^istí$ istı  # dvojtvar!
+sebaistí$ sebaistı
+#èistí$ èistı  # dvojtvar! - èo je èastejšie?
+oprostí$ oprosí
+vyprostí$ vyprosí
+prostí$ prostı  # sprostí
+chvostí$ chvostı
+prstí$ prstı
+srstí$ srstı
+spomenutí$ spomenutı
+zvyknutí$ zvyknutı  # dvojtvar!
+krutí$ krutı
+mrzutí$ mrzutı
+zarytí$ zarytı
+#krytí$ krytı
+skrytí$ skrytı  # dvojtvar!
+# --- nakoniec úprava mäkko èítanıch vınimiek na správny pravopis
+#ïí$ dí
+#í$ tí
+#òí$ ní
+#¾í$ lí
+# --- (táto úprava asi nie je nutná)
+#pre allianz
+allianz alianc
+assistance asistìns
+mondial mondyal

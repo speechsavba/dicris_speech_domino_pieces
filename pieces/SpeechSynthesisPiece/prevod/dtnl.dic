@@ -1,0 +1,2162 @@
+##testovacia cast
+#^neh(o)$ nnononn #.ne.
+# ---------------------------------------
+# --------- zmeny na zaèiatku -----------
+# ---------------------------------------
+(d|t|n|l)y(a|e|u) \1I\2	 #.x. #y->I: dyadickı, polyester, ...!!!
+# - nemôe to by na konci, pretoe: tie, tieto, ... [i -> y]
+# --------------------------------------------------------------
+# --- v tejto èasti sa môu upravova niektoré cudzie slová ----
+# --- nemalo by sa meni í<->Í, i<->I, e<->E ! -----------------
+# --------------------------------------------------------------
+anjel aniel	 #.x.
+adagio adádo	 #.x.
+abbé abé	 #.x.
+banjo bendo	 #.x.
+barcelon barselon 	 #.x.
+dealer díler	 #.x. #.dii. #.le.
+ninj nind	 #.x. #.ni.
+shop šop	 #.x.
+color kolor
+# ------------------------------------------
+# --- èas, kde sa mení vıhradne í <-> Í ---
+# ------------------------------------------
+# ---
+# --- dí ---
+# ---
+duálne duálnì
+^indí indÍ	 #.dii.
+kondí kondÍ	 #.dii.
+kondÍk kondík	 #.dii.
+anakondÍ anakondí	 #.dii.
+^tradí tradÍ	 #.dii.
+gandi gandI	#propagandista
+camping kemping
+neov(á|ú)$ nEov\1 #Beneová
+balneo balnEo
+neo$ nEo #Borneo
+neolit$ nEoLit
+neou$ nEou #guineou
+bazilej bazilEj
+diese dÍze
+filet	filEt
+lateli latElI
+atelié atElIé
+^testin(á|ú|e|o) esin\1
+testi testI
+xtí xtÍ
+tícium tÍcium
+validi valIdI
+^ion jon
+^ión jón
+jodi jodI
+diz dIz
+karote	karotE
+kartote kartotE
+^kate$ kae
+^kate katE
+newt òut
+watt vat
+^kine$ kiòe
+kine kinE
+denci(a|e|u|i) dEnci\1
+skúdoli skúdo¾i
+olim olIm
+kontej kontEj
+kulis kulIs
+èní$ ènÍ
+artil artIl #kvartil, artiléria
+leasi lízi #leasing...
+lentil lEntIl #lentilky
+liti lIti
+loop lúp
+[lr]patie$ \1pa; #chlpatie, krpatie
+patie$ patIe #antipatie, sympatie, ...
+faden fadEn #lymfadenopatie
+mandib mandIb #mandibulárnych
+tídach$ tÍdach
+hertz herc
+joul >a&l
+watt vat
+siemens síme$s
+mnest mnEst
+salic salIc
+sterili stErilI
+stilb stIlb
+letál lEtál
+sublim sublIm
+šnek šnEk
+špedi špedI
+gini ginI
+tíl tÍl
+turnik turnIk
+tonik tonIk
+neuró nEuró
+rteb rtEb
+dimá dImá
+week vík
+# ---
+^adíc adÍc	 #.dii.
+edíci edÍci	 #.dii.
+^agluti	aglutI #aglutinaène trma
+^anale	analE #analeptiká
+# ---
+díï dÍï	 #.dii.
+díde dÍde	 #.dii.
+dídu dÍdu	 #.dii.
+díd dÍd           # dídej	 #.dii.
+# ---
+díl dÍl	 #.dii.
+# ---
+akridín akridÍn	 #.dii.
+bernardín bernardÍn	 #.dii.
+sardín sardÍn	 #.dii.
+ndín ndÍn	 #.dii.
+segedín segedÍn	 #.dii.
+# ---
+dís dÍs	 #.dii.
+#predí$ preïí	 #.dii.
+#predím$ preïím	 #.dii.
+#predí predÍ	 #.dii.
+# ---
+edíte$ eïíe	#zdedíte, napajedíte, ...
+edít edÍt	 #.dii.
+dít$ dÍt	 #.dii.
+audít audÍt	 #.dii.
+# ---
+idív idÍv	 #.dii.
+# ---
+^gaudí gaudÍ	 #.dii.
+# ---
+# --- tí ---
+# ---
+gití gitÍ  #trma legitímny,....
+vití$ vitÍ   #rázovití,....
+^títo$ tÍto	 #.tii.
+#entí entÍ	 #.tii.
+hentí hentÍ	 #.tii.
+tamtí tamtÍ	 #.tii.
+^tí$ tÍ	 #.tii.
+^tím tÍm	 #.tii.
+^tít tÍt	 #.tii.
+^tích$ tÍch	 #.tii.
+^tícht tÍcht	 #.tii.
+# ---
+^andantí andantÍ	 #.tii.
+aktí aktÍ	 #.tii.
+\b(ne|anti|polo|pseudo|naj){0,1}intí \1intÍ	 #.tii. #???
+prestí prestÍ	 #.tii.
+# ---
+^investíc investÍc	 #.tii.
+justíc justÍc	 #.tii.
+#petíc petÍc	 #.tii.
+petí petÍ
+# ---
+#tída$ tÍda	 #.tii.
+#tíde$ tÍde
+#tídu$ tÍdu
+#tídy$ tÍdy
+tíd tÍd
+# ---
+kastíl kastÍl	 #.tii.
+# --- tín, tín$	 #.tii.
+štvrtín štvrín	 #.tii.
+tatínk taínk	 #.tii.
+bolestín bolesín	 #.tii.
+budatín budaín	 #.tii.
+šaštín šašín	 #.tii.
+vsetín vseín	 #.tii.
+ntín ntÍn  # valentín	 #.tii.
+rtín rtÍn  # travertín, martín	 #.tii.
+ktín ktÍn  # benediktín, pektín, aktínium	 #.tii.
+kristín kristÍn	 #.tii.
+augustín augustÍn	 #.tii.
+justín justÍn	 #.tii.
+celestín celestÍn	 #.le. #.tii.
+palestín palestÍn	 #.le. #.tii.
+elastín elastÍn	 #.tii.
+itín$ itÍn  # chitín, lecitín, pervitín	 #.tii.
+palatín palatÍn	 #.tii.
+dalmatín dalmatÍn	 #.tii.
+elatín elatÍn	 #.tii.
+keratín keratÍn	 #.tii.
+chromatín chromatÍn	 #.tii.
+biotín biotÍn	 #.tii.
+nikotín nikotÍn	 #.ni. #.tii.
+yani yanI  #trma kyanid
+narkotín narkotÍn	 #.tii.
+gilotín gilotÍn	 #.tii.
+bizmutín bizmutÍn	 #.tii.
+fiftín fiftÍn	 #.tii.
+filištín filištÍn	 #.tii.
+tín$ ín	 #.tii.
+(pre|za|od|s|vy|roz|pod|zo)tína \1ína	 #.tii.
+štetín šteín	 #.tii.
+tín tÍn	 #.tii.
+# ---	 #.tii.
+apetít apetÍt	 #.tii.
+tít$ tÍt	 #.tii.
+štÍt štít	 #.tii.
+# ---
+tív tÍv	 #.tii.
+vštÍv vštív	 #.tii.
+# ---
+# --- ní ---
+# ---
+^iní$ inÍ	 #.nii.
+tní$ tnÍ                 #ostatni	 #.nii.
+muní munÍ  #trma munícia
+# ---
+úrovní úrovòí	 #.nii.
+ovní$ ovnÍ	 #.nii.
+# ---
+finíc finÍc	 #.nii.
+# ---
+kliník$ klinÍk
+# ---
+^níl nÍl	 #.nii.
+# ---
+suvenír suvenÍr	 #.nii.
+trenír trenÍr	 #.nii.
+# ---
+nít$ nÍt	 #.nii.
+# ---
+aníz anÍz	 #.nii.
+garnía garnÍa	 #.nii.
+# ---
+# --- lí ---
+# ---
+lí$ lÍ  # ???	 #.lii.
+# ---
+koalíc koalÍc	 #.lii.
+políci polÍci	 #.xi. #.lii.
+# ---
+líd lÍd                    #solídne	 #.lii.
+# ---
+klím klÍm	 #.lii.
+# --- lín
+#!!! - adrenalín, vendelín, jarolín, orolín, hermelín, gobelín, karlín, hugolín, kaolín
+anilín anilÍn	 #.ni. #.lii.
+berlín berlÍn	 #.lii.
+disciplín disciplÍn  # plín mäkko v "zemplín"	 #.lii.
+^kolín kolÍn	 #.lii.
+^zlín zlÍn
+líni(a|e|i|o|u|á|í) lÍni\1	 #.ni. #.lii.
+lína$ lÍna	 #.lii.
+líny$ lÍny	 #.lii.
+líne$ lÍne	 #.lii. #??? -línou, ...
+inzulín inzulÍn	 #.lii.
+penicilí penicilÍ	 #.lii.
+^lín lÍn	 #.lii.
+# --- lír =OK=
+lír lÍr	 #.lii.
+# ---
+lít$ lÍt	 #.lii.
+# ---
+olív olÍv	 #.lii.
+# ---
+kolíz kolÍz	 #.lii.
+lízing lÍzing	 #.lii.
+# ---
+^dalí dalÍ	 #.lii.
+# ---
+# --- *í ---
+# ---
+ída$ Ída	 #.xii.
+ínia$ Ínia	 #.ni. #.xii.
+ínk Ínk	 #.xii.
+srdÍnk srdínk	 #.xii.
+# --- nakoniec treba zmeni spä pomocné ïí, í, òí, ¾í:
+ïí dí
+í tí
+òí ní
+¾í lí
+# ------------------------------------------
+# --- èas, kde sa mení vıhradne i <-> I ---
+# ------------------------------------------
+# ---
+# --- di ---
+# ---
+anódi anódI	 #.di.
+bandi bandI	 #.di.
+distri dIstri	 #.di.
+^indi indI	 #.di.
+judi judI                    #abjudikácia	 #.di.
+kardi kardI	 #.di.
+gardi gardI	 #.di.
+kondi kondI	 #.di.
+^kredi kredI	 #.di.
+^melodi melodI	 #.di.
+tradi tradI	 #.di.
+parodi parodI	 #.di.
+audi audI                  # Klaudia, audio, ...	 #.di.
+pediat pedIat
+periodi periodI
+peripeti peripetI
+medi medI	 #.di.
+^medI$ medi	 #.di.
+^medIri mediri	 #.di.
+štúdi štúdI	 #.di.
+predi predI	 #.di.
+predIe predie	 #.di.
+predIa predia	 #.di.
+prediab predIab	 #.di.
+prediag predIag	 #.di.
+predIvn predivn	 #.di.
+^odi odI	 #.di.
+^neodi neodI	 #.di.
+podiš podIš	 #.di.
+odIa odia	 #.di.
+odIe odie	 #.di.
+modi modI	 #.di.
+modIel modiel	 #.di.
+mimodIa¾ mimodia¾	 #.di.
+prelúdi prelúdI	 #.di.
+# --- dia, die, diu, dio, diá, ...
+#^diam dIam	 #.di.
+diag dIag  #trma nediagnostikoval
+\b(ne|anti|polo|pseudo|naj){0,1}dia \1dIa	 #.di. trma
+^dIabol diabol	 #.di.
+^dIabl diabl	 #.di.
+^dIania diania	 #.di.
+^dIanie dianie	 #.di.
+^dIaniu dianiu	 #.di.
+^dIaní dianí	 #.di.
+^dIa dia	 #.di.
+^dIal$ dial	 #.di.
+^dIala$ diala	 #.di.
+^dIale$ diale	 #.di.
+^dIali$ diali	 #.di.
+^dIalo$ dialo	 #.di.
+dIa¾ dia¾	 #.di.
+#^adiab adIab	 #.di.
+^adi adI	 #.di.  trma
+diu dIu	 #.di.
+zdIu zdiu	 #.di.
+edIu$ ediu	 #.di.
+adIu$ adiu	 #.di.
+odIu$ odiu	 #.di.
+udIu$ udiu	 #.di.
+laudiu laudIu	 #.di.
+ódia ódIa	 #.di.
+ódie ódIe	 #.di.
+ódiu ódIu	 #.di.
+#india indIa	 #.di.
+#indie indIe	 #.di.
+#indiu indIu	 #.di.
+landia landIa	 #.di.
+mandia mandIa	 #.di.
+ndie$ ndIe	 #.di.
+ondIe ondie	 #.di.
+diecéz dIecéz	 #.di.
+klaudiu klaudIu	 #.di.
+lıdi(a|e|i|o|u|á|í) lıdI\1	 #.di.
+údiu údIu	 #.di.
+tragédiu tragédIu	 #.di.
+prezídiu prezídIu	 #.di.
+diego dIego	 #.di.
+diegu dIegu	 #.di.
+diega dIega	 #.di.
+diete$ ïiee	#.di. zavediete, privediete, ...	
+diete dIetE
+édia édIa           # média, komédiu, tragédie, ... 	 #.di.
+édiu édIu	 #.di.
+édie édIe	 #.di.
+édií édIí	 #.di.
+édIeho édieho	 #.di.
+édIek édiek	 #.di.
+radiál radIál	 #.di. # iá -> Iá !
+^dio dIo	 #.di. # io -> Io !
+dió dIó	 #.di.
+expedient expedIent	 #.di.
+radiaè radIaè	 #.di.
+pardIu pardiu	 #.di.
+# --- dic, dich, diè
+dick(ı|á|é|ú|y|o|e|i) dIck\1           # deka-dick-ı, ...	 #.di.
+ediè edIè	 #.di.
+dedIè dediè	 #.di.
+iedIè iediè	 #.di.
+# ---
+didakt dIdakt	 #.di.
+kandid kandId	 #.di.
+# ---
+dif dIf	 #.di.
+dig dIg	 #.di.
+udij udIj	 #.di.
+# --- dik
+abdik abdIk	 #.di.
+beòadik beòadIk	 #.di.
+^dik dIk	 #.di.
+dikt dIkt	 #.di.
+údik úïik	 #.di.
+dik ïik	 #.di.
+dik dIk	 #.di.
+# ---
+\b(anti|ne){0,1}dil \1dIl	 #.di.
+dilat dIlat #bronchodilataènı
+dimen dImen	 #.di.
+# --- din
+^din dIn	 #.di.
+dináci dInáci	 #.di.
+dinova dInova	 #.di.
+dinoval dInoval	 #.di.
+lordi lorïi
+ordie	orïie
+ordi ordI #trma  
+#ordinuj ordInuj	 #.di.
+#ordiná ordIná	 #.di.
+ferdinand ferdInand	 #.di.
+puding pudIng	 #.di.
+škandináv škandInáv	 #.di.
+sardin sardIn	 #.di.
+edinburg edInburg	 #.di.
+dinál dInál
+# ---
+dip dIp	 #.di.
+^dir dIr	 #.di.
+diri dIri	 #.di. dirigent
+# --- dis, diš
+disci dIsci	 #.di.
+\b(anti|ne){0,1}dis \1dIs	 #.di.
+disp dIsp	 #.di.
+diskr dIskr	 #.di.
+disku dIsku	 #.di.
+dIsku$ disku	 #.di.
+\b(anti|ne){0,1}diš \1dIš	 #.di.
+nadišiel nadIšiel	 #.di.
+diš dIš	 #.di.
+dIšte dište	 #.di.
+dIša diša	 #.di.
+dIšti dišti	 #.di.
+dištin dIštin	 #.di. #.ti.
+# --- dit
+dita$ dIta               #Afrodita Dita, komodita	 #.di.
+\b(anti|ne){0,1}dit \1dIt	 #.di.
+kredit kredIt	 #.di.
+idite idIte	 #.xi. #.di.
+idIte¾ idite¾	 #.xi. #.di.
+idItel iditel	 #.xi. #.di.
+dit$ dIt	 #.di.
+dIté$ dité	 #.di.
+dItéh ditéh	 #.di.
+dItı ditı	 #.di.
+dItá$ ditá	 #.di.
+dItej ditej	 #.di.
+dItú$ ditú	 #.di.
+# ---
+^divíz dIvíz	 #.di.
+diver dIver	 #.di.
+divid dIvid	 #.di.
+divis dIvis	 #.di.
+plovdiv plovdIv	 #.x. #.di.
+# ---
+#dizer dIzer	 #.di.
+#dizaj dIzaj	 #.di.
+# ---
+^burundi burundI	 #.di.
+^poldi$ poldI	 #.di.
+^midi$ midI	 #.di.
+^heidi haidI	 #.di. #ei -> ai !!!
+verdi verdI	 #.di.
+vivaldi vivaldI	 #.di.
+vivendi vivendI	 #.di.
+^di$ dI	 #.di.
+# ---
+# --- ti ---
+# ---
+# --- vınimky typu "tie" s nemäkèiacou dvojhláskou	 #.ti.
+^tie$ tye	 #.ti.
+tieto tyeto	 #.ti.
+tamtie$ tamtye	 #.ti.
+hentie$ hentye	 #.ti.
+# ---
+^ti$ i	 #.ti.
+^tich ich	 #.ti.
+^tia ia	 #.ti.
+^tie ie  # slová tie, tieto sú u vyriešené vyššie	 #.ti.
+^tiet$ iet	 #.ti.
+^tiu iu	 #.ti.
+^tis is	 #.ti.
+^ti tI	 #.ti.
+# --- predpony, zloené slová -ti-
+^postim postIm              #postimpresionickı 	 #.ti.
+^postin postIn              #postindustriálny	 #.ti.
+^proti proI	 #.ti. #(mono bez "^"? - viï koniec -ti-)
+# ---
+akusti akustI	 #.ti.
+aritmeti aritmetI	 #.ti.
+amnesti amnestI	 #.ti.
+amorti amortI	 #.ti.
+atleti atletI	 #.le. #.ti.
+akrobati akrobatI	 #.ti.
+nisti nistI	 #.ti. #.ni.
+nistI$ nisti	 #.ti. #.ni.
+nistIe nistie	 #.ti. #???
+^lakti$ laki	 #.ti.
+dlakti dlaki	 #.ti.
+akti aktI	 #.ti.
+anesteti anestetI	 #.te. #.ti.
+^anti antI	 #.ti.
+^ante antE	 #.ti.
+^basti bastI  	 #.ti.
+bapti baptI	 #.ti.
+centi centI	 #.ti.
+centI$ centi	 #.ti.
+centIe centie  # centier, docentiek	 #.ti.
+expertí expertÍ  #expertíza
+^investi investI	 #.ti.
+lingvisti lingvistI	 #.ti.
+istI$ isti	 #.ti.
+matemati matematI	 #.te. #.ti.
+parti partI	 #.ti.
+synteti syntetI	 #.ti.
+teoreti teoretI	 #.te. #.ti.
+kriti kritI	 #.ti.
+politi politI	 #.ti. #.li.
+problemati problematI	 #.ti.
+opti optI	 #.ti.
+optIè optiè	 #.ti.
+^optiè optIè	 #.ti.
+floti flotI	 #.ti.
+arti artI	 #.ti.
+artIèk artièk	 #.ti.
+kvartI kvarti	 #.ti.
+analyti analytI	 #.ti.
+psychoti psychotI	 #.ti.
+kozmeti kozmetI	 #.ti.
+dIabeti dIabetI	 #.ti.
+geneti genetI	 #.ti.
+skepti skeptI	 #.ti.
+anorekti anorektI	 #.ti.
+romanti romantI	 #.ti.
+fanati fanatI	 #.ti.
+farmaceuti farmaceutI	 #.ti.
+agnosti agnostI	 #.ti.
+geti getI	 #.ti.
+vegetI vegeti	 #.ti.
+^eti etI	 #.ti.
+\b(ne|antI|polo|pseudo){0,1}inti \1intI	 #.ti. #???, antI!!!
+kulti kultI	 #.ti.
+multi multI	 #.ti.
+desti destI	 #.de. #.ti.
+elasti elastI  #.ti.
+empati empatI  #.ti.
+# --- tia, tie, tiu, tio, tiá, ...
+patia$ patIa	 #.ti.
+dynastia dynastIa	 #.ti.
+dynastiu dynastIu	 #.ti.
+dynastie dynastIe	 #.ti.
+bastian bastIan	 #.ti.
+empatie empatIe	 #.ti.
+beštia beštIa	 #.ti.
+beštie beštIe	 #.ti.
+beštiu beštIu	 #.ti.
+katió katIó	 #.ti.
+# ---
+tibil tIbil	 #.ti.
+# --- tic, tich, tiè
+etic etIc	 #.ti.
+etIch etich  # netichı	 #.ti.
+^neurotick neurotIck	 #.ne. #.ti.
+štich štIch	 #.ti.
+tick tIck	 #.ti.
+chtIck chtick   # š¾achtickı	 #.ti.
+trebatIc trebatic	 #.ti.
+eklektic eklektIc	 #.ti.
+tretIc tretic	 #.ti.
+tièn tIèn	 #.ti.
+matièk matIèk	 #.ti.
+^matIèk matièk	 #.ti.
+# ---
+tidov tIdov    # atristidov, nukleotidov	 #.ti.
+tif tIf	 #.ti.
+tig tIg	 #.ti.
+# --- tik
+etik etIk	 #.ti.
+^neoscholastik neoscholastIk	 #.ne. #.ti.
+^neurotik neurotIk	 #.ne. #.ti.
+tik tIk	 #.ti.
+(ú|ô|š|á)tIk \1tik	 #.ti.
+ústIk$ ústik	 #.ti.
+kıptIk kıptik	 #.ti.
+ahtIkár ahtikár	 #.ti.
+prútIkár prútikár	 #.ti.
+# --- til
+kantil kantIl  # kantiléna, merkantil	 #.ti.
+kastil kastIl	 #.ti.
+tiln tIln	 #.ti.
+xtil xtIl  # textil, sextil	 #.ti.
+ventil ventIl	 #.ti.
+matild matIld	 #.ti.
+projektil projektIl	 #.ti.
+# ---
+sortim sortIm	 #.ti.
+^tim tIm	 #.ti.
+itim itIm              # legitimova	 #.ti.
+timá tImá              # ultimátum	 #.ti.
+stimul stImul	 #.ti.
+# --- tin
+abstin abstIn	 #.ti.
+apstin apstIn	 #.ti.
+martin martIn	 #.ti.
+ntin ntIn	 #.ti.
+lióntIn lióntin	 #.ti.
+inštin inštIn	 #.ti.
+dIštin dIštIn	 #.ti. #.di.
+platin platIn	 #.ti.
+tinen tInen	 #.ne. #.ti.
+#tiner tIner	 #.ti.
+tinkc tInkc	 #.ti.
+tinkt tInkt	 #.ti.
+itinerár itInerár	 #.ti.
+tini$ tIni	 #.ti. #.ni.
+chobotIn chobotin	 #.ti. #???
+patinova patInova	 #.ti.
+ting tIng	 #.ti.
+# ---
+#^tip tIp	 #.ti.
+\b(neza|nevy|nedo|nepre|pre|za|ne|do|vy){0,1}tip \1tIp	 #.ti.
+^štipen štIpen	 #.ti.
+satir satIr	 #.ti.
+# --- tis, tiš
+^batist batIst	 #.ti.
+štatisti štatIstI	 #.ti. #(-ti !!!)
+štatistI štatIstI	 #.ti. #tik, tick je u s 'I'
+tIstI$ tIsti	 #.ti. #(-ti !!!)
+tistIck tIstIck	 #.ti.
+grátis grátIs	 #.ti.
+tis$ tIs	 #.ti.
+itist itIst	 #.xi. #.ti.
+satisfa satIsfa	 #.ti.
+fetiš fetIš	 #.ti.
+# --- tit
+titul tItul	 #.ti.
+záštit zášit	 #.ti.
+spletit spleit	 #.ti.
+titı itı	 #.ti.
+titá$ itá	 #.ti.
+tité ité	 #.ti.
+titej$ itej	 #.ti.
+titú$ itú	 #.ti.
+príšti príši	 #.ti.
+štitár šitár	 #.ti.
+tit tIt	 #.ti.
+tIte$ tite	 #.ti.
+(n|r|k|a|e|o|u)tite\b \1tIte  # kvantite, entite, tripartite, stalaktite, apatite	 #.ti.
+ietIte$ ietite  # svietite	 #.ti.
+tItel titel	 #.ti.
+tIte¾ tite¾		 #.ti.
+# ---
+^neopozitiv neopozitIv	 #.ne. #.ti.
+tivi tIvi	 #.ti.
+motiv motIv	 #.ti.
+festival festIval	 #.ti.
+# ---
+tizá tIzá                #klimatizácia deratizácia tyzmu	 #.ti.
+tiz tIz	 #.ti.
+# --- opravy (???)
+protI proI	 #.ti.
+vlastI vlasI	 #.ti.
+taktIe takie	 #.ti. #(???)
+# ---
+# --- ni ---
+# ---
+agóni agónI	 #.ni.
+fenik fenIk  #.ni. feniklovy
+vagónI vagóni	 #.ni.
+mechani mechanI	 #.ni.
+begóni begónI	 #.ni.
+fini finI	 #.ni.
+^foni fonI	 #.ni.
+^fóni fónI	 #.ni.
+kanoni kanonI	 #.ni.
+kanonIe kanonie  # kanonier	 #.ni.
+minie miòie	 #.ni.
+mini minI	 #.ni.
+delfínI delfíni	 #.ni. #nie je fínI!!!
+hygieni hygienI	 #.ni.
+sardÍni sardÍnI	 #.ni.
+británi británI	 #.ni.
+hispáni hispánI	 #.ni.
+techni technI	 #.ni.
+telefoni telefonI	 #.ni.
+elektroni elektronI	 #.ni.
+iadni iadnI	 #.ni.
+ekumeni ekumenI  #.ni.
+^úni únI	 #.ni.
+únIk únik	 #.ni.
+platIni platInI	 #.ni.
+^mani manI	 #.ni.
+anip anIp  #trma nemanipuluje, ...
+rgani rganI  #trma organizácia, ...
+^zmani zmanI	 #.ni.
+manIe manie	 #.ni.
+^etni etnI	 #.ni.
+vulkani vulkanI	 #.ni.
+unie uòie
+uni unI             # uny - munièák, univerzum, ...	 #.ni.
+unIek uniek	 #.ni.
+unIes unies	 #.ni.
+unIc unic	 #.ni.
+unIk unik	 #.ni.
+unikát unIkát	 #.ni.
+komuni komunI	 #.ni.
+#unIho uniho	 #.ni.
+#unI uni	 #.ni.
+unIè uniè	 #.ni.
+muniè munIè	 #.ni.
+dunI duni	 #.ni.
+zunIv zuniv	 #.ni.
+unIn unin	 #.ni.
+unIna unina	 #.ni.
+unInov uninov	 #.ni.
+^eni enI		 #.ni.
+geni genI	 #.ni.
+ózni$ óznI	 #.ni.
+harmoni harmonI	 #.ni.
+júni júnI	 #.ni.
+^moni monI	 #.ni.
+litáni litánI	 #.ni.
+tIni$ tInI	 #.ni. #.ti.
+meláni melánI	 #.ni.
+enij enIj  #.ni.
+štefáni štefánI	 #.te. #.ni.
+# --- nia, nie, niu, nio, niá, ...
+abesínia abesínIa	 #.ni.
+anión anIón	 #.ni.
+lÍni(a|e|i|o|u|á|í) lÍnI\1	 #.lii. #.ni.
+^neokolonia neokolonIa	 #.ne. #.ni.
+^neurasténia neurasténIa	 #.ne. #.ni.
+^niagar nIagar	 #.ni.
+eugéniu eugénIu	 #.ni.
+antóniu antónIu	 #.ni.
+énia$ énIa	 #.ni.
+ónia ónIa	 #.ni.
+trónIa trónia	 #.ni.
+ónie$ ónIe	 #.ni.
+óniu ónIu	 #.ni.
+Ínia$ ÍnIa	 #.xii. #.ni.
+gubernia gubernIa	 #.ni.
+gubernie gubernIe	 #.ni.
+guberniu gubernIu	 #.ni.
+kaliforniu kalifornIu	 #.ni.
+íniu ínIu	 #.ni.
+Íniu ÍnIu	 #.ni.
+mánia mánIa	 #.ni.
+énia énIa	 #.ni.
+énIak éniak	 #.ni.
+bizónIe bizónie	 #.ni.
+amoniak amonIak	 #.ni.
+^mania manIa	 #.ni.  trma
+^niób nIób	 #.ni.
+^niobit nIobit	 #.ni. # io -> Io !
+# ---
+kanibal kanIbal	 #.ni.
+# --- nic, nich, niè
+^inic inIc	 #.ni.
+^neurastenick neurastenIck	 #.ne. #.ni.
+penicil penIcil	 #.ni.
+cynic cynIc	 #.ni.
+#paò/nickı ??? -ickı/á/é/í/ej/ou, ... - doplni! 	 #.ni.
+klinick klinIck  #...ïalšie inick...???
+ónick ónIck	 #.ni.
+onick onIck	 #.ni.
+énick énIck	 #.ni.
+etnick etnIck  #etnick
+ponIck ponick	 #.ni.
+jablonIck jablonick	 #.ni.
+zvonIck zvonick	 #.ni.
+podkonIck podkonick	 #.ni.
+hymnick hymnIck	 #.ni.
+feniè fenIè	 #.ni.
+# ---
+nif nIf
+nig nIg	 #.ni.
+anIg anig  # hanigovce, èaniga (?)	 #.ni.
+nihil nIhil	 #.ni.
+# --- nik
+chnik$ chnIk	 #.ni.
+chnika$ chnIka	 #.ni.
+komunik komunIk	 #.ni.
+^neurastenik neurastenIk	 #.ne. #.ni.
+^nikel nIkel	 #.ni.
+^nikl nIkl	 #.ni.
+chnik chnIk           #technika	 #.ni.
+kronikár kronIkár	 #.ni.
+inik(a|á|e|o|u|y) inIk\1	 #.ni. #klinika, ...
+hlinIk hlinik  # hlinikáreò
+chnik chnIk	 #.ni.
+panik panIk	 #.ni.
+mechanik mechanIk	 #.ni.
+botanik botanIk	 #.ni.
+tItanik tItanIk	 #.ni.
+nikotÍn nIkotÍn	 #.tii. #.ni.
+cynik cynIk	 #.ni.
+cinik cinIk	 #.ni.
+onik(a|e|u|y) onIk\1	 #.ni.
+(fe){0,1}nikel \1nIkel	 #.ni.
+^nikol nIkol	 #.ni.
+unIkn unikn	 #.ni. # viï "unI" vyššie
+unIka unika	 #.ni.
+unIká$ uniká	 #.ni.
+unIkol unikol	 #.ni.
+piknik piknIk	 #.ni.
+# ---
+anilÍn anIlÍn	 #.lii. #.ni.
+anim anIm	 #.ni.
+#anImu$ animu	 #.ni.
+^nimbus nImbus	 #.ni.
+^nimród nImród	 #.ni.
+# --- nin
+nind nInd	 #.ni. #.x.
+ning nIng	 #.ni.
+lenIng lening	 #.ni.
+kalinIng kalining
+# ---
+^nirván nIrván	 #.ni.
+# --- nis, niš
+nisti nIsti	 #.ni. #.ti.
+nistI nIstI	 #.ni. #.ti.
+nis nIs  # minister, penis, komunista, ...	 #.ni.
+nIslav nislav	 #.ni.
+hnIs hnis	 #.ni.
+nIst(ı|á|é|ú) nist\1                           # nyst - vynimky: tienistı, tienisto, kamenistá,... 	 #.ni.
+hlinIsto hlinisto 	 #.ni.
+parenIsto parenisto	 #.ni.
+tienIsto tienisto	 #.ni.
+tànIsto tànisto	 #.ni.
+kamenIsto kamenisto	 #.ni.
+bahnIsto bahnisto	 #.ni.
+tônIsto tônisto	 #.ni.
+vlnIsto vlnisto	 #.ni.
+nIstej nistej	 #.ni.
+nIsk nisk                     	 #.ni.
+tenis tenIs	 #.te. #.ni.
+tunis tunIs	 #.ni.
+freni frenI  #trma schizofreni
+# --- nit
+^neutronit neutronIt	 #.ne. #.ni.
+^nit$ nIt	 #.ni.
+^nity$ nIty	 #.ni.
+^nitova nItova	 #.ni.
+^nitro nItro	 #.ni.
+^nItrou$ nitrou	 #.ni.
+^nitrit nItrit	 #.ni.
+ornitol ornItol	 #.ni.
+garnitú garnItú	 #.ni.
+kognit kognIt	 #.ni.
+# --- niv
+^nivel nIvel	#nivelizova
+# ---
+^anizo anIzo	 #.ni.
+niz nIz	 #.ni.
+# ---
+# --- li ---
+# ---
+evanieli evanIelI  # pozor! anjel -> aniel 	#.li.
+ampli amplI	 #.li.
+inteli intelI	 #.te. #.li.
+metali metalI	 #.li.
+^aboli abolI	 #.li.
+admirali admiralI	 #.li.
+aktuali aktualI	 #.li.
+\b(ne){0,1}ali \1alI	 #.li.
+angli anglI	 #.li.
+bazili bazilI                 #bazilika	 #.li.
+bili bilI	 #.li.
+bilI$ bili	 #.li.
+obilIa obilia	 #.li.
+obilIe obilie	 #.li.
+obilIu obiliu	 #.li.
+fili filI	 #.li.
+trafilI$ trafili	 #.li.
+^kili kilI	 #.li.
+kvali kvalI	 #.li.
+nIhili nIhilI	 #.ni. #.li.
+normali normalI
+reali realI	 #.li.
+publi publI	 #.li.
+bibli biblI	 #.li.
+kompli komplI	 #.li.
+mili milI	 #.li.
+milI$ mili	 #.li.
+júli júlI	 #.li.
+natáli natálI	 #.li.
+alkoholi alkoholI	 #.li.
+melancholi melancholI	 #.li.
+angeli angelI
+boli(c|k|t|s|z) bolI\1  # symbolickı, metabolit, anabolikum, ...
+# --- lia, lie, liu, lio, liá, ...
+abalien abalIen	 #.li.
+(ó|é|í|Í)li(u|a|e) \1lI\2	 #.li.
+pólIa pólia	 #.li. #???
+kvílIa kvília	 #.li.
+krokodÍlI krokodÍli	 #.li.
+pílIa pília	 #.li.
+austráli(a|e|u) austrálI\1	 #.li.
+álie$ álIe	 #.li.
+skálIe skálie	 #.li.
+áliu álIu	 #.li.
+vigília vigílIa	 #.li.
+miliard milIard	 #.li.
+¾aliu ¾alIu	 #.li.
+julian julIan	 #.li.
+klientel klIentel	 #.te. #.li.
+lió lIó	 #.li.
+# ---
+^lib lIb	 #.li.
+dalibor dalIbor	 #.li.
+kalib kalIb	 #.li.
+# --- lic, lich, liè
+lick lIck	 #.li.
+licen lIcen	 #.li.
+licit lIcit	 #.li.
+licis lIcis	 #.li. #publicista, policista
+policaj polIcaj	 #.li.
+#plic plIc	 #.li. #pozor! teplice, priplichtil, potáplic
+koaliè koalIè	 #.li.
+# ---
+lid lId	 #.li.
+lif lIf	 #.li. #! vınimky: bublifuk, ...?
+lig lIg	 #.li.
+lIgot ligot	 #.li.
+lIgoce ligoce	 #.li.
+lIgocú ligocú	 #.li.
+# --- lik
+plik plIk	 #.li. # aplikova, replika, komplikácia, ...
+klik klIk  # klik(?), encyklika, verklikár(?)	 #.li.
+polikl polIkl
+likv lIkv  # likvidácia, relikvia, delikvent, alikvotnı, likvorovı
+^lik lIk	 #.li.
+^lIkav likav	 #.li.
+likt lIkt	 #.li.
+delik delIk  # delikatesa, delikátny, psychedelikum
+všelIk všelik	 #.li.
+silik silIk	 #.li.
+helik helIk
+# ---
+klim klIm	 #.li.
+limi lImi	 #.li.
+^lim lIm	 #.li.
+# --- lin
+plin plIn	 #.li.
+^lino lIno	 #.li.
+salin salIn	 #.li.
+linI lInI  # viazaná zmena, pozri -ni- (napr. klinika)
+linÍ lInÍ  # kliník
+ling lIng	 #.li. # lingvistika, šiling, modeling
+stalIn stalin  # stalinizmus, stalingrad
+^linol lInol	 #.li.
+lineá lIneá	 #.ne. #.li.
+^liniek lIniek	 #.li.
+aerolin aerolIn	 #.li.
+cylind cylInd	 #.li.
+lintner lIntner	 #.li.
+# ---
+elips elIps	 #.li.
+flirt flIrt	 #.li.
+# --- lis, liš
+balistIk balIstIk	 #.li.
+cyklistIk cyklIstIk	 #.li.
+lisabon lIsabon	 #.li.
+elis elIs	 #.xe. #.li.
+nelIst nelist	 #.li.
+polis polIs
+lista lIsta	 #.li.
+#^lIsta$ lista	 #.li. - presunuté za "Ista" - nišie
+^lIstov$ listov	 #.li. #???
+^lIstom$ listom	 #.li. #???
+^lIstoch$ listoch	 #.li. #???
+^lIsty$ listy	 #.li. #???
+klišé klIšé	 #.li.
+poliš polIš
+# --- lit # - pozri ïalej pri (n|d|l)it
+igelit igelIt	 #.li.
+litIk lItIk	 #.li.
+^lito lIto	 #.li.
+litr lItr	 #.li.
+polit polIt	 #.li.
+pospolIt pospolit	 #.li.
+alit alIt #pozor! zavalitı ialite -> (n|d|l)it	 #.li.
+liter lIter    #neliterárny, liter, ...	 #.li.
+^elit elIt	 #.li.
+# ---
+^liv lIv	 #.li.
+oliver olIver	 #.li.
+# ---
+lizov lIzov	 #.li.
+eliz elIz	 #.xe. #.li.
+lizaèn lIzaèn	 #.li.
+kliz klIz	 #.li.
+neglié neglIé	 #.ne. #.li.
+# ---
+# ------------ (n|d|l)it -------------- (??? kam da toto ???)
+# ---
+^ulit u¾it	 #.xi.
+pospolit pospo¾it	 #.xi.
+^nitk òitk	 #.xi.
+^nitiek òiiek	 #.xi.
+nitá$ òitá	 #.xi.
+ditá$ ïitá	 #.xi.
+litá$ ¾itá	 #.xi.
+(n|d|l)it(a|u|y|I|io|á|in|k|iek|n|m|or|ov|och) \1It\2  # pokrıva ve¾a slov -	 #.xi.
+# - niektoré sú asi zbytoène uvedené aj inde	 #.xi.
+(a|e|i|I|y|o|u|\b)(n|d|l)it(om|ou|o|e)\b \1\2It\3	 #.xi.
+ielIte$ ielite  # docielite, vybielite, trielite	 #.xi.
+ialIte$ ialite	 #.xi.
+vzdialIte$ vzdialite	 #.xi.
+oddialIte$ oddialite	 #.xi.
+okolIt okolit	 #.xi.
+zavalIt zavalit	 #.xi.
+skalIt skalit	 #.xi.
+iedIte$ iedite  # sliedite, (t)riedite	 #.xi.
+riadIte$ riadite  # zariadite, nariadite	 #.xi.
+padIt padit  # nápadit-	 #.xi.
+sadIt sadit  # zásadit-, podsadit-	 #.xi.
+hadIt hadit	 #.xi.
+medvedIt medvedit	 #.xi.
+ienIt ienit  # -mienite, tienite, plienite, slienitom/-ou	 #.xi.
+zákonIt zákonit	 #.xi.
+rozmanIt rozmanit	 #.xi.
+amenIt amenit  # znamenit-, kamenit-, pramenit-	 #.xi.
+emenIt emenit  # kremenit-	 #.xi.
+èlenIt èlenit	 #.xi.
+hlinIt hlinit	 #.xi.
+blanIt blanit	 #.xi.
+dlanIt dlanit	 #.xi.
+lupenIt lupenit	 #.xi.
+sklonIt sklonit	 #.xi.
+balvanIt balvanit	 #.xi.
+^nIte nite  # dvojtvar!	 #.xi.
+nit$ nIt	 #.xi.
+lit$ lIt  # dit je ïalej	 #.xi.
+split splIt  # v splite	 #.xi.
+# ---
+# ----------- koniec (n|d|l)it --------------
+# ---
+# --- *i ---
+# ---
+id$ Id	 #.xi.
+ista$ Ista	 #.xi.
+^lIsta$ lista	 #.li.
+isti$ Isti	 #.xi.
+istk Istk	 #.xi.
+izm Izm	 #.xi.
+izáci Izáci	 #.xi.
+naim naIm	 #.xi.
+nain naIn	 #.xi.
+ius Ius	 #.xi.
+ium Ium	 #.xi.
+iencia Iencia	 #.xi.
+iencie Iencie	 #.xi.
+ienciu Ienciu	 #.xi.
+iencio Iencio	 #.xi.
+inely Inely	 #.xi.
+ii$ Ii	 #.xi.
+ií$ Ií	 #.xi.
+iá Iá	 #.xi.
+icí Icí	 #.xi.
+ides$ Ides	 #.de. #.xi.
+lei leI	 #.le. #.xi.
+dei deI	 #.de. #.xi.
+tei teI	 #.te. #.xi.
+itIst ItIst	 #.xi. #.ti. #!!!
+idIte IdIte	 #.xi. #.di. #!!!
+xi xI	 #.xi.
+ksi ksI	 #.xi.
+ient Ient	 #.xe. #.xi.
+pacIent pacient	 #.xi.
+koeficIent koeficient	 #.xi.
+orIent orient	 #.xi.
+ivovan Ivovan	 #.xi.
+obdIv obdiv	 #.xi.
+ilát Ilát	 #.xi.
+ix Ix	 #.xi.
+iks Iks	 #.xi.
+Itos itos	 #.xi.
+iabil Iabil	 #.xi.
+io Io	 #.xi.
+kinest kInest	 #.xi. #???
+spinel spInel	 #.xi. #???
+# ---
+# -------------------- dvojhlásky ---------------------
+# ---
+# --- bia/e/u ---
+# ---
+óbiu óbIu	 #.xi.
+namíbie namíbIe 	 #.xi.
+fabianová fabIanová	 #.xi.
+(í|Í|ı)bi(a|e|u) \1bI\2	 #.xi.
+# ---
+# --- cia/e/u ---
+# ---
+encia$ encIa	 #.xe. #.xi.
+encio encIo	 #.xe. #.xi.
+polÍci polÍcI	 #.lii. #.xi.
+tenci tencI	 #.te. #.xi.
+tencI$ tenci	 #.xi.
+(í|Í|é|á|ó|ú)ci(e|a|u) \1cI\2	 #.xi.
+ncia ncIa	 #.xi.
+šancIam šanciam	 #.xi.
+mincIar minciar	 #.xi.
+encie encIe	 #.xe. #.xi.
+pancIer pancier	 #.xi. #??? - "ancIe" nie je!!!
+inIci inIcI	 #.xi.
+inici inicI	 #.xi. #???
+vinicI vinici	 #.xi. #???
+sinicI sinici	 #.xi. #???
+enciu encIu	 #.xe. #.xi.
+kcia kcIa	 #.xi.
+kcie kcIe	 #.xi.
+kciu kcIu	 #.xi.
+asociuj asocIuj	 #.xi.
+alIanci alIancI	 #.xi.
+uciu ucIu	 #.xi.
+ucia ucIa            # - Lucia, Konfucia, ...	 #.xi.
+kysucIa kysucia	 #.xi.
+cucIa cucia	 #.xi.
+ucie ucIe	 #.xi.
+dIplomacia dIplomacIa	 #.xi.
+dIplomacie dIplomacIe	 #.xi.
+dIplomaciu dIplomacIu	 #.xi.
+súcIen súcien	 #.xi. #??? - "úcIe" nie je!!!
+p¾úcIe p¾úcie	 #.xi. #??? - "úcIe" nie je!!!
+esci escI	 #.xi.
+# ---
+# --- fia/e/u ---
+# ---
+fia fIa	 #.xi.
+fie$ fIe	 #.xi.
+fiu fIu	 #.xi.
+irafI irafi	 #.xi.
+trafIa trafia	 #.xi.
+ultrafia ultrafIa	 #.xi.
+^mafi mafI	 #.xi.
+# ---
+# --- gia/e/u ---
+# ---
+giu gIu	 #.xi.
+gie gIe	 #.xi.
+hygIen hygien	 #.xi.
+p¾uzgIer p¾uzgier	 #.xi.
+legIend legiend	 #.xi.
+gIet$ giet	 #.xi.
+gia gIa	 #.xi.
+lógia$ lógIa	 #.xi.
+# ---
+# --- chia/e/u ---
+# ---
+chia chIa	 #.xi.
+chiu chIu	 #.xi.
+chie$ chIe	 #.xi.
+# ---
+# --- kia/e/u ---
+# ---
+kiu kIu	 #.xi.
+# ---
+# --- mia/e/u ---
+# ---
+#  -----------   (ó|á|é|í|Í|ú)mi(u|a|e)	 #.xi.
+ómiu$ ómIu                     	 #.xi.
+émia émIa	 #.xi.
+émiu$ émIu	 #.xi.
+ímiu$ ímIu	 #.xi.
+Ímiu$ ÍmIu	 #.xi.
+ámiu$ ámIu	 #.xi.
+émie$ émIe	 #.xi.
+ómie$ ómIe	 #.xi.
+úmia úmIa	 #.xi.
+úmiu úmIu	 #.xi.
+múmie múmIe	 #.xi.
+ımia ımIa	 #.xi.
+ımiu ımIu	 #.xi.
+ımie ımIe	 #.xi.
+# ---
+# --- pia/e/u ---
+# ---
+ópia ópIa	 #.xi.
+ópie ópIe	 #.xi.
+ópiu ópIu	 #.xi.
+sépia sépIa	 #.xi.
+kápiu kápIu	 #.xi.
+terapia terapIa	 #.xi.
+apiu apIu           # terapiu	 #.xi.
+terapie terapIe	 #.xi.
+olympi olympI	 #.xi.
+piarist pIarist	 #.xi.
+piarIst pIarIst	 #.xi. #"Ista" je vyššie
+# ---
+# --- ria/e/u ---
+# ---
+^teóri teórI	 #.te. #.xi.
+árie árIe	 #.xi.
+komárIe komárie	 #.xi.
+konárIe konárie	 #.xi.
+^máriu$ márIu	 #.xi.
+^mária$ márIa	 #.xi.
+^márie$ márIe	 #.xi.
+riu rIu	 #.xi.
+adriuška adrIuška	 #.xi.
+fúria fúrIa	 #.xi.
+galériu galérIu	 #.xi.
+variujú varIujú	 #.xi.
+nIgéri nIgérI	 #.xi.
+éria érIa	 #.xi.
+ériu érIu	 #.xi.
+érie$ érIe	 #.xi.
+^adria adrIa	 #.xi.
+óri órI	 #.xi.
+ária árIa	 #.xi.
+kvárIa kvária	 #.xi.
+tvárIa tvária	 #.xi.
+šafárIa šafária	 #.xi.
+párIa pária	 #.xi.
+hospodárIa hospodária 	 #.xi.
+panIkárIa panIkária	 #.xi.
+svárIa svária	 #.xi.
+komárIe komárie	 #.xi.
+árIek$ áriek	 #.xi.
+homárIe homárie	 #.xi.
+homárIa homária	 #.xi.
+árIeho$ árieho	 #.xi.
+onárIe onárie	 #.xi.
+rybárIa rybária	 #.xi.
+triang trIang	 #.xi.
+triano trIano	 #.xi.
+variab varIab	 #.xi.
+variant varIant	 #.xi.
+# ---
+# --- sia/e/u ---
+# ---
+siu$ sIu	 #.xi.
+poèasIu poèasiu	 #.xi.
+psIu psiu	 #.xi.
+husIu husiu	 #.xi.
+pštrosIu pštrosiu	 #.xi.
+zákulisIu zákulisiu	 #.xi.
+osIu osiu	 #.xi.
+rákosIu rákosiu	 #.xi.
+epilepsi epilepsI	 #.xi.
+komisia komisIa	 #.xi.
+komisie komisIe	 #.xi.
+komisiu komisIu	 #.xi.
+# ---
+# --- via/e/u ---
+# ---
+juhoslávia juhoslávIa	 #.xi.
+juhoslávie juhoslávIe	 #.xi.
+juhosláviu juhoslávIu	 #.xi.
+kolokviu kolokvIu	 #.xi.
+návia návIa	 #.xi.
+návie návIe	 #.xi.
+náviu návIu	 #.xi.
+šalviu šalvIu	 #.xi.
+silvi silvI	 #.xi.
+^ávia$ ávIa	 #.xi.
+# ---
+# --- zia/e/u ---
+# ---
+(í|Í|é|á|ó|ú)zi(e|a|u) \1zI\2	 #.xi.
+nzia nzIa	 #.xi.
+šimpanzIa šimpanzia	 #.xi.
+nzie nzIe	 #.xi.
+šimpanzIe šimpanzie	 #.xi.
+nziu nzIu	 #.xi.
+šimpanzIu šimpanziu	 #.xi.
+ziuganov zIuganov	 #.xi.
+erziu erzIu	 #.xi.
+erzia erzIa	 #.xi.
+erzie erzIe	 #.xi.
+^alojzi alojzI	 #.xi.
+^ázi ázI	 #.xi.
+# ---
+# --- ia/e/u ---
+# ---
+éi(e|a|u) éI\1	 #.xi.
+# --- nakoniec treba zmeni spä pomocné ïi, i, òi, ¾i:
+ïi di
+i ti
+òi ni
+¾i li
+# ------------------------------------------
+# --- èas, kde sa mení vıhradne e <-> E ---
+# ------------------------------------------
+# ---
+# --- de ---
+# ---
+^ade adE	 #.de.
+^inde$ inïe	 #.de.
+^inde indE	 #.de.
+konde kondE	 #.de.
+geode geodE	 #.de.
+orde ordE	 #.de.
+evink Evink  #devinkulacia
+štvordE štvorde	 #.de. #pozor! štvordecovı
+hyperde hyperdE	 #.de.
+oonden	oonïen
+nden ndEn  #trma
+#tenden tEnDen	#.de.
+# --- dea, dei, deo, deu, ...
+dea dEa                  # videa, idea, orchidea, ...	 #.de.
+deI dEI	 #.xi. #.de.
+deo dEo                 # video, ideológia,  ...	 #.de.
+vodEo vodeo	 #.de.
+všadEo všadeo	 #.de.
+deu dEu	 #.de.
+# ---
+debil dEbil	 #.de.
+deba dEba	 #.de.  trma
+^deb dEb	 #.de.
+dEbniè debniè	 #.de.
+# --- dec, dech, deè, deh
+deciek ïeciek
+^dec dEc                #decentr	 #.de.
+deci dEci
+dEck deck  # decko, vedeckı, jazdeckı	 #.de.
+sládeè sládEè	 #.de.
+cédeè cédEè	 #.de.
+deèk dEèk	 #.de.
+dehone dEhonE
+dehydr dEhydr
+delo dElo
+delab dElab
+delib dElIb
+deci dEci
+# ---
+deduk dEduk	 #.de.
+def dEf	 #.de.
+deg dEg	 #.de.
+aldeh aldEh	 #.de.
+# --- dej
+^madej madEj	 #.de.
+dej$ dEj	 #.de.
+èarodEj èarodej	 #.de.
+dobrodEj dobrodej	 #.de.
+nádEj nádej	 #.de.
+zlodEj zlodej	 #.de.
+^dEj$ dej	 #.de.
+^odEj$ odej	 #.de.
+^neodEj$ neodej	 #.de.
+zaodEj$ zaodej	 #.de.
+^udEj$ udej	 #.de.
+^neudEj$ neudej	 #.de.
+habadEj habadej	 #.de.
+medvedEj medvedej	 #.de.
+leopardEj leopardej	 #.de.
+ondEj ondej	 #.de.
+^hadEj hadej	 #.de.
+trúdEj trúdej	 #.de.
+bdEj bdej	 #.de.
+drozdEj drozdej	 #.de.
+# --- dek
+dekor dEkor	 #.de.
+dekremen dEkremen	 #.de.
+dekl dEkl	 #.de.
+deka dEka	 #.de.
+#dek$ dEk                 # Feldek, idek,...	 #.de.
+#deka$ dEka	 #.de.
+#dekovi dEkovi	 #.de.
+#dekov dEkov	 #.de.
+#dekov dEkov	 #.de.
+dek dEk	 #.de.
+dEkomu$ dekomu	 #.de.
+dEkam$ dekam	 #.de.
+dEkto$ dekto	 #.de.
+dEkım$ dekım	 #.de.
+dEkoho$ dekoho	 #.de.
+dEko¾ deko¾	 #.de.
+dEktor dektor	 #.de.
+# --- del =OK=
+^del$ dEl  # ? deli
+deleg dEleg	 #.de.
+model modEl	 #.de.
+sardel sardEl	 #.de.
+#bordel bordEl  # pozri ordE vyššie; ? trdelník; prdel - dvojtvar!
+#^adel adEl  # pozri adE vyššie
+tadel tadEl  # citadela
+kandel kandEl	 #.de.
+mandel mandEl	 #.de.
+vendel vendEl	 #.de.
+fidel fidEl  # fidel, fidelita
+pudel pudEl
+delb dElb	 #.de.
+delf dElf	 #.de.
+delt dElt	 #.de.
+delv dElv	 #.de. #delvita
+^delon dElon
+^delú dElú  # delúvium
+^delu dElu  # deluxe, deluviálny
+^dElu$ delu
+delI dElI  # delikt(-kvent), delikátny, delimitácia, ...
+delÍr dElÍr  # delírium
+# --- dem
+akadem akadEm	 #.de.
+demo dEmo	 #.de.
+^dem dEm	 #.de.
+^nedem nedEm	 #.de.
+dEmäno demäno	 #.de.
+demi dEmi	 #.de.
+demI dEmI	 #.de.
+dema dEma  # valdemar, ...
+ndem ndEm  # tandem
+odem odEm  # modem
+# --- den, deò
+#dend dEnd  # -> (d|t|n|l)end
+#dent dEnt  # -> (d|t|n|l)ent
+denèn dEnèn	 #.de.
+latistom laistom   #zlaistom blaistom
+tistom$ tIstom
+tistov$ tIstov
+tistu$ tIstu
+tista$ tIsta  #trma - vsetci tista
+^dentI dEntI	#dentista,..
+^dent dEnt	#dentálny,..
+#^jeden jedEn	 #.de.
+jeden jedEn	 #.de.
+jedEnia$ jedenia	 #.de.
+jedEnie$ jedenie	 #.de.
+jedEní$ jedení	 #.de.
+jedEnı$ jedenı	 #.de.
+jedEné$ jedené	 #.de.
+jedEná$ jedená	 #.de.
+jazdeno jazïeno  #trma  jazdenom
+zdeno zdEno	 #.de.
+denIs dEnIs	 #.de.
+iaden iadEn	 #.de.
+kredenc kredEnc	 #.de.
+oden$ odEn	 #.de.
+^eden edEn	 #.de.
+denz dEnz	 #.de.
+denIs dEnIs	 #.de.
+^denár dEnár	 #.de.
+^zden zdEn	 #.de.
+^den dEn	 #.de.
+^dEng¾ deng¾	 #.de.
+^dEnn denn	 #.de.
+podeò podEò	 #.de.
+nadeò nadEò	 #.de.
+predeò predEò	 #.de.
+# --- dep
+pravdep pravïep
+dep dEp	 #.de.
+všadEprít všadeprít	 #.de.
+pravdEpod pravdepod	 #.de.
+# --- der
+moder modEr	 #.de.  #! vınimka: samoderavie
+nder ndEr	 #.de.
+frederik fredErik                  # MENÁ	 #.de.
+feder fedEr	 #.de.
+váder vádEr	 #.de.
+deró dEró	 #.de.
+deratI dEratI  #deratizácia
+^dere dEre  #deregulova
+^derm dErm  #dermatológ
+^dielek dIelek #dielektrikum
+dietky ïietky
+^diet dIet
+deriv dEriv  #derivuje,...
+dermat dErmat  #dermatologia
+derog dErog  #derogaènı,...
+^dic dIc #dichlór
+^dim dIm #dimetyl
+káder kádEr	 #.de.
+# --- des, deš
+Ides$ IdEs	 #.xi. #.de.
+despot dEspot	 #.de.
+destI dEstI	 #.ti. #.de.
+deskri  dEskri  #deskriptíva,...
+desta  dEsta  #destabilizuje
+^podest podEst	 #.de.
+^deš dEš	 #.de.
+^nedeš nedEš	 #.de.
+^sebadeš sebadEš	 #.de.
+^autodeš autodEš	 #.de.
+^samodeš samodEš	 #.de.
+# --- det
+deter dEter	 #.de. #.te.
+deton dEton	 #.de.
+detto dEtto	 #.de.
+^dete dEte	 #.de. #.te.
+detail dEtail	 #.de.
+kadet kadEt	 #.de.
+detaš dEtaš
+detox dEtox
+detro dEtro
+devast dEvast
+devel dEvel	#developer
+devIá dEvIá	#deviacie
+# ---
+deval dEval	 #.de.
+devol dEvol	 #.de.
+devíz dEvíz	 #.de.
+# --- dez, de
+^dez dEz	 #.de.
+dezider dEzidEr	 #.de. #dez & der !!!
+^deo dEo
+dezin dEzin	 #.de.
+# ---
+dE$ de	 #.de.
+^de$ dE	 #.de.
+#garde - dvojtvar!	 #.de.
+^rande$ randE	 #.de.
+grande$ grandE	 #.de.
+# ---
+# --- te ---
+# ---
+^andante andantE	 #.te.
+^ate atE	 #.te.
+^aneste anestE	 #.te.
+^monte montE	 #.te.
+synte syntE	 #.te.
+^dEte dEtE	 #.de. #.te.
+hypote hypotE	 #.te.
+hyperte hypertE	 #.te.
+\b(neza|ne|antI|polo|pseudo|vše|za){0,1}inte \1intE	 #.te.
+fekete feketE	 #.te.
+# --- tea, tei, teo, teu, ...
+^teórI tEórI	 #.xi. #.te.
+teoretI tEoretI	 #.ti. #.te.
+teo tEo	 #.te.
+teu tEu	 #.te.
+tea tEa	 #.te.
+teI tEI	 #.xi. #.te.
+# ---
+eštebá eštEbá	 #.te.
+# --- tec, tech, teè
+katech katEch	 #.te.
+^tech$ tEch	 #.te.
+techn tEchn	 #.te.
+# ---
+vted vtEd	 #.te.
+^teda$ tEda	 #.te.
+katedr katEdr	 #.te.
+^tedy$ tEdy	 #.te.
+#artefakt artEfakt	 #.te.
+^arte artE	#.te.
+štefánI štEfánI	 #.ni. #.te.
+teg tEg	 #.te.
+teho$ tEho	 #.te.
+ateho atEho                  # èíslovky: dvadsiatehoprvého, ...	 #.te.
+teherán tEherán	 #.te.
+# --- tej
+^tej tEj	 #.te.
+tej$ tEj	 #.te.
+tretEj tretej	 #.te.
+matEj matej	 #.te.
+koktejl koktEjl	 #.te.
+# --- tek
+protek protEk	 #.te.
+tekt tEkt	 #.te.
+teková tEková	 #.te. #???
+tekovej tEkovej	 #.te. #???
+tekovú tEkovú	 #.te. #???
+# --- tel
+^intelI intElI	 #.li. #.te.
+^intele intEle	 #.te. #.le.
+kartel kartEl	 #.te.
+kastel kastEl	 #.te.
+filate filatE	 #.te. filatelia
+^tele tEle  #telefonova, televízia, telenovela, ...	 #.te. #.le.
+#\b(neza|nevy|nedo|nepre|pre|za|ne|do|vy){0,1}tele \1tEle                 #telefonovat	 #.te.
+tele(v|f|k|g|c) tEle\1	 #.te.
+^tEle$ tele	 #.te.
+tElen(i|í|ı|ce\b) telen\1	 #.te.
+tEles(n|ò|a|á|o|e\b|u\b) teles\1	 #.te.
+telk tElk	 #.te.
+prístElk prístelk	 #.te.
+riaditElk riaditelk	 #.te.
+uèitElk uèitelk	 #.te.
+vıstElk vıstelk	 #.te.
+satel satEl	 #.te.
+globtel globtEl
+otel otEl	 #.te. #hotel, motel, eurotel, aristoteles
+^otEli oteli	 #.te.
+^neotEli neoteli	 #.te.
+^otElí otelí	 #.te.
+^neotElí neotelí	 #.te.
+^otEle otele	 #.te.
+celotEl celotel	 #.te.
+^etel etEl	 #.te.
+klIentel klIentEl	 #.li. #.te.
+štelácI štElácI	 #.te.
+telov tElov	 #.te.
+^tElov telov	 #.te.
+telgá tElgá	 #.te.
+# --- tem
+tem tEm	 #.te.
+tEm(n|ò|en|ä|r|k) tem\1	 #.te.
+tement tEment	 #.te.
+# --- ten
+^neurastenIck neurastEnIck	 #.ni. #.te. #.ne.
+^neurastenIk neurastEnIk	 #.ni. #.te. #.ne.
+^ten$ tEn	 #.te.
+^tene$ tEne	 #.te.
+tener tEner
+tenor tEnor  # mono ^ten -> tEn s vınimkami: tenk, tenš, tenuè, tenul ???
+#tent tEnt  # -> (d|t|n|l)ent
+#tend tEnd  # -> (d|t|n|l)end
+tenIs tEnIs	 #.ni. #.te.
+tencI tEncI	 #.xi. #.te.
+henten hentEn	 #.te.
+tamten tamtEn	 #.te.
+tenz tEnz	 #.te.
+tenstein tEnstein	 #.te.
+stenograf stEnograf	 #.te.
+# --- ter
+^amater amatEr	 #.te.
+dEter dEtEr	 #.de. #.te.
+#meter metEr	 #.te.
+#^ter tEr	 #.te.
+teraz tEraz	 #.te.
+#peter petEr	 #.te.
+ter tEr                #(teáter, ...)	 #.te.
+matEr mater	 #.te.
+materia matEria	 #.te.
+materIá matErIá	 #.te.
+opatEr opater	 #.te.
+utErák uterák	 #.te.
+utEráè uteráè	 #.te.
+ıtEr ıter	 #.te.
+štEr šter	 #.te.
+^šter štEr	 #.te.
+vetErn vetern	 #.te.
+zástEr záster	 #.te.
+netEr neter	 #.te.
+neteror netEror	 #.te.
+netermi netErmi	 #.te.
+termí tErmí	 #.te.
+nátEr náter	 #.te.
+potEr poter	 #.te.
+^otEr oter	 #.te.
+^kotEr koter	 #.te.
+tErchov terchov	 #.te.
+jatErn jatern	 #.te.
+konštern konštErn	 #.te.
+# --- tes, teš
+test tEst	 #.te.
+tesk tEsk	 #.te.
+^tEsk tesk 	 #.te.
+tes$ tEs    # --- cudzie 	 #.te. #???
+útEs útes   # --- cudzie	 #.te.
+^tEs$ tes # --- cudzie	 #.te. #???
+tesil tEsil	 #.te.
+tesl tEsl  # tesla
+# --- tet
+teto tEto	 #.te.
+prote protE	#proteticke
+tEtou tetou	 #.te.
+stet stEt	 #.te.
+tet$ tEt	 #.te.
+^tetra tEtra	 #.te.
+# ---
+stevard stEvard	 #.te.
+kartez kartEz	 #.te.
+# ---
+# --- ne ---
+# ---
+\b(ne|antI){0,1}ane \1anE	 #.ne.
+anEnsk anensk	 #.ne.
+gynek gynEk	 #.ne. gynekologickı
+^bene benE	 #.ne.
+benev benEv  #trma najbenevolent
+^fone fonE	 #.ne.
+iadne iadnE	 #.ne.
+kine$ kinE         # inE/ej	 #.ne.
+^kinE$ kine      	 #.ne.
+autokinE autokine	 #.ne.
+multIkinE multIkine	 #.ne.
+énne énnE	 #.ne.
+suverénnE suverénne	 #.ne.
+ínne ínnE	 #.ne.
+ónne ónnE	 #.ne.
+èierne èiernE	 #.ne.
+lItErárne lItErárnE	 #.ne.
+švárne švárnE	 #.ne.
+prázdne$ prázdnE	 #.ne.
+vagónE vagóne	 #.ne. #je tam E???
+enine eninE	 #.ne.
+nevestine nevestinE	 #.ne.
+dcérine dcérinE	 #.ne.
+sestrine sestrinE	 #.ne.
+# --- nea, neá
+geneal genEal	 #.ne.
+lIneá lInEá	 #.li. #.ne.
+neapol nEapol	 #.ne.
+neandEr nEandEr	 #.ne.
+# ---
+neèk nEèk	 #.ne.
+^nEèk neèk	 #.ne.
+^knedl knEdl	 #.ne.
+# --- neg =OK=
+anegdot anEgdot	 #.ne. # správne je anekdot!
+neglIé nEglIé	 #.li. #.ne.
+negat nEgat	 #.ne.
+seneg senEg	 #.ne.
+negaè nEgaè	 #.ne.
+negác nEgác	 #.ne.
+negát nEgát  # negátor, renegát	 #.ne.
+negr(a\b|ami\b|i\b|it|o) nEgr\1	 #.ne.
+neguj nEguj	 #.ne.
+neger nEger	 #.ne.
+nEgerm negerm	 #.ne.
+negev nEgev	 #.ne.
+nego nEgo	 #.ne.
+# --- neh, nej =OK=
+^neho$ òeho	 #.ne.
+neho$ nEho #.ne.
+^nej$ òej	 #.ne.
+nej$ nEj	 #.ne.
+^menEj menej	 #.ne.
+\b(ne|naj|viac|prinaj|po|niè|nie|na)menEj \1menej
+^znEj znej	 #.ne. # ? ^zaznej, ^záznej, ^doznej, ^vyznej, ^neznej
+^ènEj ènej	 #.ne. # ! pozor na kolíziu s príd. menami -nej
+# ? ïalšie: zovšednej, (s)èernej, zjemnej, skamenej
+^panEj panej	 #.ne. # ? milospanej
+jelenEj jelenej	 #.ne.
+tokánEj tokánej	 #.ne.
+tulenEj tulenej	 #.ne.
+vranEj vranej  # tie havranej
+baranEj baranej
+muflónEj muflónej
+slonEj slonej  #!ešte: ^lanej, hluchánej, bocianej, šarkanej, potkanej, sršnej, ^kunej, pelikánej, hyenej
+^irenej irenEj  # nemusí by na konci
+pyrenej pyrenEj  # nemusí by na konci
+guinej guinEj  # nemusí by na konci
+^brunej brunEj  # nemusí by na konci
+^orknej orknEj  # nemusí by na konci
+# --- nek
+nektár nEktár	 #.ne.
+nekrológ nEkrológ	 #.ne.
+fenek fenEk	 #.ne.
+# --- nel
+mantInel mantInEl	 #.ne.
+kornel kornEl	 #.ne.
+èinel èinEl	 #.ne.
+sentInel sentInEl	 #.ne.
+tunel tunEl	 #.ne.
+onel onEl	 #.ne.
+anel anEl	 #.ne.
+oplanEl oplanel	 #.ne.
+honEl honel	 #.ne.
+havranEl havranel	 #.ne.
+bronEli broneli	 #.ne. #???
+# --- nem
+inema inEma	 #.ne.
+nemu$ nEmu	 #.ne.
+^snEmu$ snemu	 #.ne.
+^nEmu$ nemu	 #.ne.
+^vnEmu$ vnemu	 #.ne.
+# --- nen
+#nent nEnt  # -> (d|t|n|l)ent
+#nend nEnd  # -> (d|t|n|l)end
+onen onEn	 #.ne.
+zvonEn zvonen	 #.ne.
+klonEn klonen	 #.ne.
+clonEn clonen	 #.ne.
+zákonEn zákonen	 #.ne.
+^ronEn ronen	 #.ne.
+zronEn zronen	 #.ne.
+vyronEn vyronen	 #.ne.
+bronEn bronen  # obronenie	 #.ne.
+tInen tInEn	 #.ti. #.ne.
+# --- neo, neó
+^neobarok nEobarok	 #.ne.
+^neodım nEodım	 #.ne.
+^neofaš nEofaš	 #.ne.
+^neofyt nEofyt	 #.ne.
+^neogén nEogén	 #.ne.
+^neokant nEokant	 #.ne.
+^neoklasic nEoklasic	 #.ne.
+^neokolonIa nEokolonIa	 #.ni. #.ne.
+^neol nEol	 #.ne.
+^neón nEón	 #.ne.
+^neonaciz nEonaciz	 #.ne.
+^neoplat nEoplat	 #.ne.
+^nEoplati neoplati	 #.ne.
+^nEoplatí neoplatí	 #.ne.
+^neopozitIv nEopozitIv	 #.ti. #.ne.
+^neopragma nEopragma	 #.ne.
+^neoprén nEoprén	 #.ne.
+^neoreal nEoreal	 #.ne.
+^neoromant nEoromant	 #.ne.
+^neoscholastIk nEoscholastIk	 #.ti. #.ne.
+^neotomizmus nEotomizmus	 #.ne.
+^neotyp nEotyp	 #.ne.
+^neovitalIz nEovitalIz	 #.ne.
+^neozoikum nEozoikum	 #.ne.
+# --- nep
+^nep$ nEp	 #.ne.
+^nepál nEpál	 #.ne.
+^nEpáli nepáli	 #.ne.
+^nEpálen nepálen	 #.ne.
+^nepman nEpman	 #.ne.
+#^nepot nEpot	 #.ne.
+#^nepovsk nEpovsk	 #.ne.
+^nept nEpt	 #.ne.
+# --- ner
+^nero$ nEro	 #.ne.
+^nera$ nEra	 #.ne.
+nerv nErv	 #.ne.
+^ner òer	 #.ne.
+nièner nièòer	 #.ne.
+ner nEr	 #.ne.
+# --- nes, neš
+amnest amnEst	 #.ne.
+#(\w)nest \1nEst	 #.ne.
+#nEste$ neste	 #.ne.
+^anes anEs	 #.ne.
+^nesesér nEsesér	 #.ne.
+^nestorn òestor	 #.ne.
+^nestor nEstor	 #.ne.
+agnes agnEs	 #.ne.
+ernest ernEst	 #.ne.
+tnes tnEs       #fitnes	 #.ne.
+# --- net
+#magnet magnEt	 #.ne.
+netto nEtto	 #.ne.
+#rnet rnEt	 #.ne.
+sèerne sèeròe	 #.ne. #???
+starne staròe	 #.ne. #???
+agne agnE  #trma magnezit
+net nEt             #   net	 #.ne.
+^nEt net	 #.ne. #net???
+nEte$ nete	 #.ne. #nete, internete???
+kabinete kabinEte	 #.ne.
+podnEt podnet	 #.ne.
+znEt znet	 #.ne.
+snEt snet	 #.ne.
+èernEt èernet	 #.ne. # sèernetı
+hnEt hnet	 #.ne.
+ánEt ánet          # zánet	 #.ne.
+knEt knet          # opeknetá	 #.ne.
+ènEt ènet          # (???)	 #.ne.
+intErnet intErnEt	 #.ne. #???
+# --- neu, neú
+^neuma$ nEuma	 #.ne.
+^neuralg nEuralg	 #.ne.
+^neurasténIa nEurasténIa	 #.ni. #.ne.
+^neurastEnIck nEurastEnIck	 #.ni. #.te. #.ne.
+^neurastEnIk nEurastEnIk	 #.ni. #.te. #.ne.
+^neurín nEurín	 #.ne.
+^neurit nEurit	 #.ne.
+^neurón nEurón	 #.ne.
+^neurop nEurop	 #.ne.
+^neuroch nEuroch	 #.ne.
+^neurol nEurol	 #.ne.
+^neurot nEurot	 #.ne.
+^neurotIk nEurotIk	 #.ti. #.ne.
+^neurotIck nEurotIck	 #.ti. #.ne.
+^neuróza nEuróza	 #.ne.
+^neutrál nEutrál	 #.ne.
+^neutral nEutral	 #.ne.
+^neutrofil nEutrofil	 #.ne.
+^neutrón nEutrón	 #.ne.
+^neutronIt nEutronIt	 #.ni. #.ne.
+^neutrum nEutrum	 #.ne.
+pneu pnEu	 #.ne.
+# ---
+^karnev karnEv	 #.ne.
+enev enEv	 #.ne.
+# ---
+# --- le ---
+# ---
+tEle tElE	 #.te. #.le. #viazaná zmena, pozri "tele" pod -te-; takisto: ^intele, aristoteles
+^mole molE	 #.le.
+komple komplE	 #.le.
+Ele ElE	 #.le. #nahrádza aj tEle!!! -> mono zaradi na koniec (?)
+#ele elE - takto to pôvodne bolo, ale: nielen, oddelenie, prelet...	 #.le.
+finále finálE	 #.le.
+# --- lea, lei, leo, leu, ...
+leI lEI	 #.xi. #.le.
+leo lEo	 #.le. #tie napoleon
+lea lEa	 #.le.
+leu lEu	 #.le.
+^dolEuv doleuv  # doleuvedenı	 #.le.
+# ---
+celeb celEb	 #.le.
+leg lEg	 #.le.
+# --- leh =OK=
+leh lEh
+lEh(ot|o|oc|ô|át) leh\1
+bolEhl bolehl
+# ---
+^alej alEj	 #.le.
+lej$ lEj	 #.le. # nalej, ...!!!
+# --- lek
+lekt lEkt	 #.le.
+elek elEk	 #.xe. #.le.
+katalek katalEk	 #.le.
+kolek kolEk	 #.le.
+# ---
+paralel paralEl	 #.le.
+# --- lem =OK=
+lem lEm	 #.le. #???lem, lemova, lemujú, lemy(dvojtvar!); lemešany
+šlEm šlem	 #.le. # kašlem, pošleme
+plEm plem	 #.le. # plemeno/-ien
+mplem mplEm	 #.le. # komplementárny, implementácia
+# --- len
+#lent lEnt  # -> (d|t|n|l)ent
+#lend lEnd  # -> (d|t|n|l)end
+^alen alEn	 #.le.
+^elen elEn	 #.le.
+^helen helEn	 #.le.
+^lenk lEnk	 #.le. #lena/e/ou???
+# --- lep =OK=
+#lepat lEpat  # telepat - u je pod "tElE"
+lepid lEpid  # lepidus/-da, lepido-
+lEpid(l|iel) lepid\1
+lepor lEpor  # leporelo, teleport - u je pod "tElE"
+lepr lEpr	 #.le.
+leps lEps	 #.le.
+lept(o|ó|i|í) lEpt\1  # epileptik, kleptoman, leptón, ...
+lEpti lEptI
+lEptí lEptÍ
+# --- ler =OK=
+ler lEr               # hitler, díler, alergia, ...	 #.le.
+bolEráz boleráz  # jediná vınimka z -lEr- ?
+# --- les =OK=, okrem cudzích slov ako: charles, angeles, schlesinger, alessandro, ...
+les$ lEs
+^lEs$ les  # príles, neles?
+^plEs$ ples  # neples?
+pralEs$ prales
+poklEs$ pokles
+áles álEs  # majáles(-u,-om), ...
+^zálEs záles
+lesb lEsb  # lesieb!
+lesc lEsc
+lest lEst
+bolEst bolest
+ratolEst ratolest
+šelEst šelest
+bolesl bolEsl
+nobles noblEs
+burlesk burlEsk  # -telesk- je pod "tElE"
+# --- leš =OK=
+lešen ¾ešen
+lešt ¾ešt
+leš ¾eš
+pleš p¾eš
+šleš$ š¾eš  # pošleš, kašleš; mono ešte: mrmleš, brbleš, frfleš
+leš lEš  # lešek, lešèák, bolešov, ...??? (zatia¾ tvrdo)
+# --- let
+atlet atlEt	 #.ti. #.le.
+amulet amulEt	 #.le.
+balet balEt	 #.le.
+^belet belEt	 #.le.
+hamlet hamlEt
+kabriolet kabriolEt
+letarg lEtarg
+omelet omelEt
+palet palEt
+pamflet pamflEt	 #.le.
+rolet rolEt  # roleta, proletár
+skelet skelEt
+tablet tablEt	 #.le.
+toalet toalEt	 #.le.
+bilet bilEt
+letál lEtál
+# ---
+relev relEv
+^levant lEvant	 #.le.
+^levit lEvit 	 #.le.
+# ---
+# --- *e ---
+# ---
+elEk ElEk	 #.xe. #.le. #???
+^nElEk nelek  # nelekár, 2 zmeny!	 #.xe.
+encIa$ EncIa	 #.xi. #.xe.
+encIo EncIo	 #.xi. #.xe.
+trEt tret	 #.xe. #???
+ex Ex	 #.xe.
+eks Eks	 #.xe.
+edIk EdIk	 #.xe.
+encIe EncIe	 #.xi. #.xe.
+encIu EncIu	 #.xi. #.xe.
+enèn Enèn          # tendenènı, asistenènı	 #.xe.
+elIs ElIs	 #.li. #.xe.
+elIz ElIz	 #.li. #.xe.
+(d|t|n|l)ent \1Ent	 #.xe.
+(d|t|n|l)end \1End	 #.xe. # lendak???
+(d|t|n|l)e(á|í|ó) \1E\2	 #.xe.
+^nEá neá  # neárijec, neázijskı	 #.xe.
+^nEí neí  # neís, neírsky, neíska	 #.xe.
+# --- nakoniec treba zmeni spä pomocné ïe, e, òe, ¾e:
+ïe de
+e te
+òe ne
+¾e le
+# ----------------------------------------
+# ---
+# --------- zmeny na konci -----------
+# ---
+^sme$ zme	 #.x.
+^smen zmen		  # par.97 smena	 #.x.
+\btak(m|r|v|isto) tag\1	 #.x. #takmer, takreèeno, takveru, takisto
+\bniè(m|n) nid\1  # niènerobenie, niènetušiaci, nièmenej
+# ^trafme$ trawme           # par.121 trafi - blbost	 #.x.
+^so$ zo                    #par.106	 #.x.
+^ku$ gu	 #.x.
+^avšak$ afšak	 #.x.
+stein štain	 #.x.
+akiste agiste	 #.x.
+kvôli gvôli	 #.x.
+#^vášmu$ vámu	 #.x.
+ášmu$ ámu	 #.x.
+# --- pravidla str. 57 (nedá sa to spravit krajšie?)	 #.x.
+dème$ ème # presvedème, musi byt pred ème$	 #.x.
+dè$ è   # presvedè 	 #.x.
+^krème$ krÈme # pomocné È	 #.x.
+ème$ dme  # cvième, ...	 #.x.
+È è	 #.x.
+pásme$ páSme # pomocné S	 #.x.
+písme$ píSme	 #.x.
+ôsme$ ôSme	 #.x.
+sme$ zme   # prosme, ...	 #.x.
+S s	 #.x.
+pme$ bme   # kúpme, ...	 #.x.
+šme$ me   # riešme, ...	 #.x.
+
+################################################################
+#blok riesi vnutroslovne spoje pre ciselne predpony
+################################################################
+#sm zïm   # vráme, šesmiestny...	 #.x.
+päo päO
+(pä|šes|devä|desa|nás|dsa|štvr)([bdzïghvmnòrl¾åjaáeéiíyıoóuúôä]) \1ï\2
+O o
+viacej viaCej
+viacer viaCer
+\bviac([bdzïghvmnòrl¾åjaáeéiíyıoóuúôä]) viadz\1
+tisíce$ tisíCe
+tisíca$ tisíCa
+tisícu$ tisíCu
+tisícej$ tisíCej
+tisíceho$ tisíCeho
+tisícemu$ tisíCemu
+tisícou$ tisíCou
+tisícom$ tisíCom
+tisícich$ tisíCich
+tisícim$ tisíCim
+tisícimi$ tisíCimi
+tisíci$ tisíCi
+tisícové$ tisíCové
+tisícovı$ tisíCovı
+tisícoví$ tisíCoví
+tisícovıch$ tisíCovıch
+tisícovım$ tisíCovım
+tisícovımi$ tisíCovımi
+tisícová$ tisíCová
+tisícovej$ tisíCovej
+tisícovú$ tisíCovú
+tisícovou$ tisíCovou
+tisícového$ tisíCového
+tisícovému$ tisíCovému
+tisícmi$ tisíCmi
+tisíc([bdzïghvmnòrl¾åjaáeéiíyıoóuúôä]	) tisídz\1
+C c
+desiate desiaTE
+desiata desiaTa
+desiatu desiaTu
+desiatni desiaTni
+desiatin desiaTin
+desiatej desiaTEj
+desiateho desiaTEho
+desiatemu desiaTEmu
+desiatou desiaTou
+desiatom desiaTom
+desiatich desiaTich
+desiatim desiaTim
+desiatimi desiaTimi
+desiati desiaTi
+desiatové desiaTové
+desiatovı desiaTovı
+desiatoví desiaToví
+desiatovıch desiaTovıch
+desiatovım desiaTovım
+desiatovımi desiaTovımi
+desiatová desiaTová
+desiatovej desiaTovej
+desiatovú desiaTovú
+desiatovou desiaTovou
+desiatového desiaTového
+desiatovému desiaTovému
+desiatni desiaTni
+desiatuj desiaTuj
+desiaty desiaTy
+desiatı desiaTı
+desiaté desiaTé
+#desiat([bdzïghvmnòrl¾åjaáeéiíyıoóuúôä]) desiad\1
+desiat([bdzïghvmnòrl¾åjaáeiíoóuúôä]) desiad\1
+T t
+################################################################
+#me$ ïme   # vráme, ...	 #.x.
+# ---	 #.x.
+#sieb$ zieb	 #.x.
+garsón garzón	 #.x.
+garson garzon	 #.x.
+# --- èíslovkové zloeniny	 #.x.
+tisícmi$ isícmi	 #.x.
+tisích$ isích	 #.x.
+tisíc(r|l|v|n|m|j|h) isídz\1	 #.x.
+\bviac(r|l|v|n|m|j|h|ú) viadz\1	 #.x.
+(r|l|v|n) ï\1  # desaroèie, štvrrok, pälitrovı, dvanásvoltovı, šesnásobnı, ...	 #.x.
+# --- !ešte ošetri: +j,m (sú vınimky); siat+r,l,m,n,j,v	 #.x.
+# --- pozor! znak '&'	 #.x.
+ou o&	 #.x.
+#^eur / e&r  - dvojtvar	 #.x.
+leuk le&k	 #.x.
+eugen e&gen	 #.x.
+au a&	 #.x.
+a&tor autor	 #.x.
+za& zau		 #.x.
+na& nau	 #.x.
+naut na&t 	 #.x.
+seba& sebau	 #.x.
+ou$ o&	 #.x.
+soul so&l	 #.x.
+tou to&	 #.x.
+po& pou	 #.x.
+dou do&	 #.x.
+#èerv èer&	 #.x.
+#erv$ er&	 #.x.
+Erv$ Er&	 #.x.
+pravd pra&d	 #.x.
+právd prá&d	 #.x.
+krivd kri&d	 #.x.
+krívd krí&d	 #.x.
+plovdIv plo&dIv	 #.di. #.x.
+ovplyv ofplyv	 #.x.
+# ---	 #.x.
+# ------- POZNÁMKA ------------	 #.x.
+# nepouíva zmenu i/í -> y/ı, ale i/í -> I/Í	 #.x.
+# - okrem slov tie, tieto, tamtie, hentie;	 #.x.
+# Problém je aj v súbore zmeny.dic, keï sa mení 	 #.x.
+# (d|t|n|l)y -> i, èo dáva dvojhlásku v slovách	 #.x.
+# dyadickı, polyester a pod.	 #.x.
+# -----------------------------	 #.x.
+# ----> zmeny.dic	 #.x.
+\b(ne){0,1}(predo|nado|do|po|za|zo|od|naj|pre|nad|pod|dô|ná|pri|na){0,1}v(p|t||k|š|ch|è) \1\2f\3  #v na f	 #.x.
+# - tento vıraz upravi na formy typu: vèer, vèas, ... !!!
+vst(a|á|u|ú) fst\1  # vınimka! - kovstav
+\b(ne){0,1}Ex(a|á|i|í|I|u|ú|e|é|o|ó|n|ò|h|m|l|¾|r|j|v) \1Egz\2  # existova, neexistova, exílium, exogénny, exminister, ...	 #.x.
+ExIst EgzIst  # koexistuje	 #.x.
+x ks	 #.x.
+qu kv	 #.x.
+q k	 #.x.
+#ph f - vınimky? (napr. hiphop, pophviezda)	 #.x.
+lle lE	 #.x.
+lli lI	 #.x.
+llí lÍ	 #.x.
+ll l  # hollı, kollár, apollo, billa	 #.x.
+jI ji	 #.x.
+Ia Ya	 #.x.
+Ie Ye	 #.x.
+IE Ye	 #.x.
+Iu Yu	 #.x.
+I y  # vysvetlenie: 'I' sa v okolí inıch hlások chová divne -	 #.x.
+Y I  # - ponecháva sa preto iba na maskovanie dvojhlások	 #.x.
+Í ı	 #.x.
+# ---
+E ì
+# ---
+pyrrh pirh	#Pyrrhovo
+#END END

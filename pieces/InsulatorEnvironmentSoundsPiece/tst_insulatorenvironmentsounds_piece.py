@@ -1,5 +1,6 @@
 from domino.testing import piece_dry_run
 
+
 def test_insulatorenvironmentsounds_piece():
 	input_data = dict(
 		y='http://speech.savba.sk/DiCris/echo_20250715_094400_7B-0.wav',

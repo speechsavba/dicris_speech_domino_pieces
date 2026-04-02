@@ -3,6 +3,8 @@ from domino.testing import piece_dry_run
 def test_insulatorcontamination_piece():
 	input_data = dict(
 		y='http://speech.savba.sk/DiCris/echo_20250715_094400_7B-0.wav',
+		#y='http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav',
+		#y='http://speech.savba.sk/DiCris/echo_20250716_104301_D5.wav',
 		sr=192000,
 	)
 

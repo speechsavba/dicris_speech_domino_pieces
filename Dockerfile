@@ -15,8 +15,9 @@ RUN pip install --no-cache-dir librosa onnxruntime
 RUN pip install --no-cache-dir joblib scikit-learn==1.7.2
 #RUN pip install --no-cache-dir resampy tensorflow soundfile tf-keras
 RUN cd /home/domino/pieces_repository/pieces/TTSPiece/monotonic_align/ && python setup.py build_ext --inplace
+RUN apt-get update && apt-get install -y wget unzip
 RUN cd /home/domino/pieces_repository/pieces/TTSPiece/model && wget http://speech.savba.sk/DiCris/tts_model.zip && unzip tts_model.zip && rm tts_model.zip
-RUN ls -l /home/domino/pieces_repository/pieces/TTSPiece/model/  
+RUN ls -l /home/domino/pieces_repository/pieces/TTSPiece/model/
 RUN cd /home/domino/pieces_repository/pieces/TTSPiece/ && python tts_vits.py
 RUN cd /home/domino/pieces_repository/ && python -c "from pieces.TTSPiece.tst_tts_piece import test_tts_piece; test_tts_piece()"
 RUN cd /home/domino/pieces_repository/ && python -c "from pieces.InsulatorEnvironmentSoundsPiece.tst_insulatorenvironmentsounds_piece import test_insulatorenvironmentsounds_piece; test_insulatorenvironmentsounds_piece()"

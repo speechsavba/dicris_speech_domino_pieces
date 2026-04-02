@@ -16,12 +16,15 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 # Add it to sys.path if needed
 sys.path.append(current_dir)
 
-from calc_yamnet import identify_with_yamnet
+from calc_yamnet_onnx import identify_with_yamnet
 
 class InsulatorEnvironmentSoundsPiece(BasePiece):
 
 	def piece_function(self, input_data: InputModel):
 		self.logger.info(f"InsulatorEnvironmentSoundsPiece START")
+		if not hasattr(self, 'workflow_shared_storage_path'):
+			self.workflow_shared_storage_path='./home_shared_storage'
+		self.modelpath=self.workflow_shared_storage_path+'/speech_data/insulator/'
 		sr = input_data.sr
 		# Try to open image from file path or base64 encoded string
 		y = input_data.y
@@ -49,7 +52,7 @@ class InsulatorEnvironmentSoundsPiece(BasePiece):
 		y_np = y_16k.astype(np.float32)
 		self.logger.info(f"InsulatorEnvironmentSoundsPiece IDENTIFICATION START")
 
-		infered_class,infered_prob,top10=identify_with_yamnet(y_np)
+		infered_class,infered_prob,top10=identify_with_yamnet(y_np,self.modelpath)
 
 		self.logger.info(f"InsulatorEnvironmentSoundsPiece IDENTIFICATION END")
 

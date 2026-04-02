@@ -1,0 +1,157 @@
+# -*- coding: utf-8 -*-
+from domino.base_piece import BasePiece
+from .models import InputModel, OutputModel
+from io import BytesIO
+import numpy as np
+import base64
+import os,sys
+from pathlib import Path
+import librosa
+import numpy as np
+import requests
+import tensorflow as tf
+import numpy as np
+import math
+from tensorflow.keras import layers, models
+from tensorflow.keras.losses import Huber
+from .voice_stress import VoiceStress
+wav_file='e:/Python/TRILL/mama.wav'
+import soundfile as sf
+signal, samplerate = sf.read(wav_file)
+vs=VoiceStress(trill_model_path=r"e:/Python/DiCris/DOMINO/dicris_speech_domino_pieces/home_shared_storage/speech_data/stress/trill/", stress_regression_model_path='e:/Python/DiCris/DOMINO/dicris_speech_domino_pieces/home_shared_storage/speech_data/stress/model/nn_stress_regressor_mmvl+stressdat_huber.keras')
+vs.get_prediction(signal)
+input('>')
+
+class SpeechStressPiece(BasePiece):
+	def __init__(self, *args, **kwargs):
+		# 1. (Optional) Run the parent class's initialization logic
+		super().__init__(*args, **kwargs)
+
+
+
+
+
+	def piece_function(self, input_data: InputModel):
+
+		print('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+		if not hasattr(self, 'workflow_shared_storage_path'):
+			self.workflow_shared_storage_path='./home_shared_storage'
+		if not hasattr(self, 'current_dir'):
+			print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+			print("A new SpeechStressPiece object has been created!")
+			self.current_dir = os.path.dirname(os.path.abspath(__file__))
+			# Add it to sys.path if needed
+			sys.path.append(self.current_dir)
+			from trill import init_trill_model, get_TRILLv3_audiofile, get_TRILLv3_signal,get_TRILLv3_signal_ok
+			self.init_trill_model = init_trill_model
+			self.get_TRILLv3_signal = get_TRILLv3_signal_ok
+		print('self.results_path:',self.results_path)
+		print('self.workflow_shared_storage_path:',self.workflow_shared_storage_path)
+		self.logger.info(self.workflow_shared_storage_path)
+		self.logger.info(f"SpeechStressPiece START")
+		sr = input_data.sr
+		# Try to open image from file path or base64 encoded string
+		y = input_data.y
+		print('BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+		max_path_size = 4096#int(os.pathconf('/', 'PC_PATH_MAX'))
+		if len(y) < max_path_size:
+			if y.startswith('http'):
+				self.logger.info("Y seems to be URL, loading with requests and librosa")
+				y,sr=self.get_url_data(y)
+			elif  Path(y).exists() and Path(y).is_file():
+				self.logger.info("Y is a file path, loading with librosa")
+				if sr<=0:
+					sr=None
+				y, sr = librosa.load(y, sr=sr)
+
+		else:
+			self.logger.info("Y is not a file path, trying to decode as base64 string")
+			try:
+				decoded_bytes = base64.b64decode(y)
+				y = np.frombuffer(decoded_bytes, dtype=np.float32)
+			except Exception:
+				raise ValueError("Y is not a file path or a base64 encoded string")
+
+		print(type(y))
+		self.logger.info(f"SpeechStressPiece GET FEATURES")
+		feats=self.get_features_trill(y,sr)
+		self.logger.info(f"SpeechStressPiece FEATURES SHAPE: "+ str(feats.shape))
+		print(f"SpeechStressPiece FEATURES SHAPE: "+ str(feats.shape))
+		speechstress_pred = self.do_prediction(feats)
+		if speechstress_pred<0.0:
+			speechstress_pred=0.0
+		if speechstress_pred>1.0:
+			speechstress_pred=1.0
+		self.logger.info('Prediction value {}'.format(speechstress_pred))
+		raw_content = f"Prediction value of stress level in speech on scale 0-1 (0-no stress 1-high stress) is: {speechstress_pred}\n"
+		base64_content = base64.b64encode(raw_content.encode("utf-8")).decode("utf-8")
+		self.display_result = {
+			"file_type": "txt",
+			"base64_content": base64_content
+		}
+
+		# Return output
+		return OutputModel(
+			speechstresslevel=speechstress_pred,
+		)
+
+	def get_features_trill(self, y, sr):
+		#print(type(y))
+		trill_model_path=self.workflow_shared_storage_path + '/speech_data/stress/trill'
+		#print('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ')
+		#print(trill_model_path)
+		self.init_trill_model(pp=trill_model_path)
+		trillv3_emb_avg=self.get_TRILLv3_signal(y,sr)
+		return (np.array(trillv3_emb_avg))
+		
+	def sigmoid_transformation(self,x):
+	    stred = 18
+	    strmost = 0.2#0.35 
+	    
+	    y = 1 / (1 + math.exp(-strmost * (x - stred)))
+	    return y			
+	
+	def transformacia_rozsahu(self,x):
+	    # O�etrenie hodn�t mimo z�kladn� rozsah 0-100 (volite�n�)
+	    x = max(0, min(100, x))
+
+	    if x <= 13:
+	        # Segment 0-13 -> 0-0.13
+	        # Pomer je 1:1, ale vzorec pre linearitu: y = y0 + (x - x0) * (y1 - y0) / (x1 - x0)
+	        return x * (0.13 / 13)
+	    
+	    elif x <= 23:
+	        # Segment 13-23 -> 0.13-0.75
+	        return 0.13 + (x - 13) * (0.75 - 0.13) / (23 - 13)
+	    
+	    else:
+	        # Segment 23-100 -> 0.75-1.0
+	        return 0.75 + (x - 23) * (1.0 - 0.75) / (100 - 23)
+
+	def do_prediction(self,feats):
+		print('do_prediction: '+str(type(feats)) +' '+ str(feats.shape))
+		nnmodel = tf.keras.models.load_model(self.workflow_shared_storage_path+"/speech_data/stress/model/nn_stress_regressor_mmvl+stressdat_huber.keras",custom_objects={"Huber": Huber})
+		y_pred = nnmodel.predict(np.array([feats]))[0][0]
+		self.logger.info('Prediction done')
+		print(y_pred)
+		y_pred=self.sigmoid_transformation(y_pred)
+		print(y_pred)
+		return (y_pred)
+		
+	def get_url_data(self,url):
+		try:
+			headers = {}
+			body_data = None
+			response = requests.get(url, headers=headers)
+			response.raise_for_status()
+
+		except requests.RequestException as e:
+			raise Exception(f"HTTP request error: {e}")
+
+		audio_bytes = BytesIO(response.content)
+
+		y, sr = librosa.load(audio_bytes, sr=None)
+
+		return(y,sr)
+
+

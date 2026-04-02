@@ -2,8 +2,8 @@
     "DicrisDatasetPiece": {
         "name": "DicrisDatasetPiece",
         "dependency": {
-            "dockerfile": null,
-            "requirements_file": "requirements_0.txt"
+            "dockerfile": "Dockerfile_1",
+            "requirements_file": null
         },
         "tags": [
             "default",
@@ -64,13 +64,13 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/DicrisDatasetPiece"
+        "source_url": null
     },
     "InsulatorEnvironmentSoundsPiece": {
         "name": "InsulatorEnvironmentSoundsPiece",
         "dependency": {
-            "dockerfile": null,
-            "requirements_file": "requirements_0.txt"
+            "dockerfile": "Dockerfile_1",
+            "requirements_file": null
         },
         "tags": [
             "default",
@@ -128,13 +128,13 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/InsulatorEnvironmentSoundsPiece"
+        "source_url": null
     },
     "InsulatorHealthPiece": {
         "name": "InsulatorHealthPiece",
         "dependency": {
-            "dockerfile": null,
-            "requirements_file": "requirements_0.txt"
+            "dockerfile": "Dockerfile_1",
+            "requirements_file": null
         },
         "tags": [
             "default",
@@ -194,6 +194,148 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/InsulatorHealthPiece"
+        "source_url": null
+    },
+    "SpeechStressPiece": {
+        "name": "SpeechStressPiece",
+        "dependency": {
+            "dockerfile": "Dockerfile_1",
+            "requirements_file": null
+        },
+        "tags": [
+            "default",
+            "stress"
+        ],
+        "style": {
+            "node_label": "Stress in speech",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "ic:twotone-filter",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "A Piece that predicts level of stress in speech in range 0-100",
+        "container_resources": {
+            "requests": {
+                "cpu": 100,
+                "memory": 128
+            },
+            "limits": {
+                "cpu": 500,
+                "memory": 512
+            }
+        },
+        "input_schema": {
+            "properties": {
+                "y": {
+                    "default": "http://speech.savba.sk/DiCris/stress/zrab_crisis_3_0003.wav",
+                    "description": "path to audio or URL to audio or sound read with librosa library and converted to a base64 encoded string.",
+                    "title": "audio to asses",
+                    "type": "string"
+                },
+                "sr": {
+                    "default": 16000,
+                    "description": "Sampling frequency of sound (integer)",
+                    "title": "Sampling frequency of sound",
+                    "type": "integer"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "voicestresslevel": {
+                    "default": 0.0,
+                    "description": "Stress level in range: min 0.0 - 1.0 max  (float)",
+                    "title": "Voicestresslevel",
+                    "type": "number"
+                },
+                "textstresslevel": {
+                    "default": "NORMAL",
+                    "description": "Stress level from text - NORMAL, CAUTION or ALERT. I case of error: UNKNOWN",
+                    "title": "Textstresslevel",
+                    "type": "string"
+                },
+                "text": {
+                    "default": "",
+                    "description": "ASR text from audio",
+                    "title": "Text",
+                    "type": "string"
+                },
+                "speaker_id": {
+                    "default": "",
+                    "description": "Speaker ID from voice",
+                    "title": "Speaker Id",
+                    "type": "string"
+                }
+            },
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": null
+    },
+    "TTSPiece": {
+        "name": "TTSPiece",
+        "dependency": {
+            "dockerfile": "Dockerfile_1",
+            "requirements_file": null
+        },
+        "tags": [
+            "default",
+            "datasets"
+        ],
+        "style": {
+            "node_label": "Slovak TTS",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "lucide:toy-brick",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "Synthesise audio file from text in slovak",
+        "input_schema": {
+            "properties": {
+                "text": {
+                    "default": "Dnes je piatok a idem domov.",
+                    "description": "Text to synthesize in utf-8 encoding",
+                    "title": "Text to synthesize",
+                    "type": "string"
+                },
+                "voice": {
+                    "default": "bajn",
+                    "description": "Sampling frequency of sound (integer)",
+                    "title": "Voice to use for synthesis. Available: bajn, hamar3_ore",
+                    "type": "string"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "output_audiofile_path": {
+                    "description": "Output audiofile path of the synthesized speech.",
+                    "title": "Output Audiofile Path",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "output_audiofile_path"
+            ],
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": null
     }
 }

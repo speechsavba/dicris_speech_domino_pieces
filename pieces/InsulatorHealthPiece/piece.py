@@ -43,6 +43,8 @@ class InsulatorHealthPiece(BasePiece):
 	def piece_function(self, input_data: InputModel):
 
 		print('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+		if not hasattr(self, 'workflow_shared_storage_path'):
+			self.workflow_shared_storage_path='./home_shared_storage'
 		self.logger.info(f"InsulatorHealthPiece START")
 		sr = input_data.sr
 		# Try to open image from file path or base64 encoded string
@@ -83,11 +85,37 @@ class InsulatorHealthPiece(BasePiece):
 			"file_type": "txt",
 			"base64_content": base64_content
 		}
-
+		status = 'undefined'
+		if contamination_pred<1:
+			status='ok'
+		elif contamination_pred<2:
+			status='moderate'
+		elif contamination_pred<3:
+			status='warning'
+		else:
+			status='critical'
+		self.set_dashboard_status(status=status)
 		# Return output
 		return OutputModel(
 			contamination=contamination_pred,
 		)
+
+	def set_dashboard_status(self,status,model_name='Insulator'):
+		DASHBOARD_URL = "https://dicris.sk:8000"
+		if not status in ['ok','moderate','warning','critical','undefined']:
+			status='undefined'
+
+		response = requests.post(
+			f"{DASHBOARD_URL}/models",
+			json={"name": model_name, "status": status}
+		)
+
+		if response.status_code == 201:
+			print(f"OK: {response.json()}")
+		else:
+			print(f"Chyba {response.status_code}: {response.text}")
+
+		return response
 
 	def get_features_50Hz_Marian_2D(self, y, sr, makedb=True, matrix_size=64):
 		n_fft = 192000
@@ -112,8 +140,11 @@ class InsulatorHealthPiece(BasePiece):
 		global norm_pipeline
 		global old_min, old_max, new_min, new_max,pipeline
 		if pipeline is None:
-			model_path = str(Path(__file__).parent / 'svr_pipeline.joblib')
-			limits_path = str(Path(__file__).parent / 'svr_pipeline.limits')
+			#model_path = str(Path(__file__).parent / 'svr_pipeline.joblib')
+			#limits_path = str(Path(__file__).parent / 'svr_pipeline.limits')
+			model_path = self.workflow_shared_storage_path+ '/speech_data/insulator/svr_pipeline.joblib'
+			limits_path = self.workflow_shared_storage_path+ '/speech_data/insulator/svr_pipeline.limits'
+			
 			self.logger.info('Trying to load model from {}'.format(model_path))
 			if Path(model_path).exists() and Path(model_path).is_file() and Path(limits_path).exists() and Path(limits_path).is_file():
 				try:

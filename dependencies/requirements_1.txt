@@ -1,8 +1,0 @@
-numpy==1.23.5
-librosa
-joblib
-scikit-learn==1.7.2
-resampy
-tensorflow
-soundfile
-tf-keras

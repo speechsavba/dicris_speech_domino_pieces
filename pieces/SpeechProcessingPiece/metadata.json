@@ -1,6 +1,6 @@
 {
-    "name": "InsulatorHealthPiece",
-    "description": "A Piece that predicts insulator health from sound.",
+    "name": "SpeechStressPiece",
+    "description": "A Piece that predicts level of stress in speech in range 0-100",
     "dependency": {
         "dockerfile": "Dockerfile_1"
     },
@@ -16,10 +16,10 @@
     },
     "tags": [
         "default",
-        "insulator"
+        "stress"
     ],
     "style": {
-        "node_label": "Insulator health",
+        "node_label": "Stress in speech",
         "icon_class_name": "ic:twotone-filter"
     }
 }

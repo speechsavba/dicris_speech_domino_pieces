@@ -2,7 +2,7 @@
     "name": "DicrisDatasetPiece",
     "description": "Provide random audio files from DiCris",
     "dependency": {
-        "requirements_file": "requirements_0.txt"
+		"dockerfile": "Dockerfile_1"
     },
     "tags": [
         "default",

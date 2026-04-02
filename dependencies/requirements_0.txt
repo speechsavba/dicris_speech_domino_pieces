@@ -6,3 +6,4 @@ resampy
 tensorflow
 soundfile
 tf-keras
+llama-cpp-python

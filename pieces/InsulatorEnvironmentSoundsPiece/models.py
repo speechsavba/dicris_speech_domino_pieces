@@ -14,8 +14,8 @@ class InputModel(BaseModel):
 	)
 
 class OutputModel(BaseModel):
-	top_class: str = Field(default='unknown',description="Top Sound class"),
-	top_prob: float = Field(default=0.0, description="Probability of Top Sound class"),
+	top_class: str = Field(default='unknown',description="Top Sound class")
+	top_prob: float = Field(default=0.0, description="Probability of Top Sound class")
 	top10: str = Field(default='unkown', description="Top 10 of sound classes"
 	)
 

@@ -1,0 +1,8 @@
+sherpa_onnx
+sherpa_onnx_core
+soundfile==0.13.1
+tensorflow
+tensorflow_hub
+tensorflow_intel
+torch==2.9.0
+llama_cpp_python==0.3.16

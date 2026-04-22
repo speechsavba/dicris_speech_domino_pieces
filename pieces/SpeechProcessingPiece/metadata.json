@@ -2,7 +2,8 @@
     "name": "SpeechProcessingPiece",
     "description": "Speech pocessing piece",
     "dependency": {
-		"requirements_file": "requirements_5.txt"
+		"dockerfile_": "Dockerfile_1",
+		"requirements_file": "requirements_5a.txt"
     },
     "container_resources": {
         "requests": {

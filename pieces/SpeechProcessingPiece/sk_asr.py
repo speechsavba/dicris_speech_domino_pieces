@@ -68,6 +68,8 @@ class SK_ASR():
 
 		
 	def transcribe_audio(self,audio,sr=16000):
+		if self.model is None:
+			return("Missing model in path: "+self.asr_model_path)
 		self.stream = self.model.create_stream()
 		self.stream.accept_waveform(16000, audio)
 		self.model.decode_stream(self.stream)

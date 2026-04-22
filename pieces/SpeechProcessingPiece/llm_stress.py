@@ -47,12 +47,15 @@ class TextStress():
 		if not os.path.isfile(self.llm_model_path):
 			if self.logger:
 				self.logger.info('Error: VoiceStress class not initialised - llm_model_path not file')
+			self.llm_model = None
 			return
 
 		#self.llm_model = self.init_llm(chat_format="gemma")
+
 		try:
 			self.llm_model = self.init_llm()
 		except Exception:
+			self.llm_model=None
 			traceback.print_exc()
 			if self.logger:
 				self.logger.info('Error: VoiceStress class not initialised - Llama did not load model')
@@ -126,7 +129,7 @@ class TextStress():
 	def get_text_stress_level_v2(self,text):
 
 		if self.llm_model==None:
-			self.llm_model=self.init_llm(chat_format="gemma")
+			return('UNKNOWN')
 		messages = [{"role": "system", "content": default_prompt2}]
 		for user,assistant in priklady:
 			messages.append({"role": "user", "content": user})

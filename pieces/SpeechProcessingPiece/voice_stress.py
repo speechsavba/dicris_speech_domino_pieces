@@ -40,6 +40,8 @@ class VoiceStress():
 			else:
 				self.nnmodel = tf.keras.models.load_model(self.stress_regression_model_path,custom_objects={"Huber": Huber})
 		except Exception:
+			self.nnmodel=None
+			self.trill_model_ready=False
 			print('Exception loading model: ',self.stress_regression_model_path)
 			traceback.print_exc()
 			if self.logger:
@@ -52,7 +54,14 @@ class VoiceStress():
 	#   y - signal 16kHz
 	#  sr - sampling frequency
 	def get_voice_stress_level(self,y,sr=16000):
-		
+		if not self.trill_model_ready:
+			if self.logger:
+				self.logger.info('Trill model missing in path: '+self.trill_model_path)
+			return(-1.0,-1.0)
+		if self.nnmodel is None:
+			if self.logger:
+				self.logger.info('Voice Stress model missing in path: '+self.stress_regression_model_path)
+			return (-1.0, -1.0)
 		feats=self.get_features_trill(y,sr)
 		speechstress_score,speechstress_prob = self.do_prediction(feats)
 		if speechstress_prob<0.0:
@@ -101,6 +110,10 @@ class VoiceStress():
 	        return 0.75 + (x - 23) * (1.0 - 0.75) / (100 - 23)
 
 	def do_prediction(self,feats):
+		if self.nnmodel is None:
+			if self.logger:
+				self.logger.info('Voice Stress model missing in path: '+self.stress_regression_model_path)
+			return(-1.0,-1.0)
 		if self.logger:
 			self.logger.info('VoiceStress.do_prediction START')
 		print('do_prediction: '+str(type(feats)) +' '+ str(feats.shape))

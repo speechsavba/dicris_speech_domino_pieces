@@ -2,7 +2,6 @@
     "name": "SpeechSynthesisPiece",
     "description": "Synthesise audio file from text in slovak",
     "dependency": {
-		"dockerfile": "Dockerfile_1"
     },
     "tags": [
         "default",

@@ -1,6 +1,6 @@
 {
-    "name": "DicrisDatasetPiece",
-    "description": "Provide random audio files from DiCris",
+    "name": "InsulatorDatasetPiece",
+    "description": "Provide random audio files from DiCris insulator dataset",
     "dependency": {
 		"dockerfile": "Dockerfile_1"
     },
@@ -9,7 +9,7 @@
         "datasets"
     ],
     "style": {
-        "node_label": "Dicris Dataset",
+        "node_label": "Insulator Dataset",
         "icon_class_name": "lucide:toy-brick"
     }
 }

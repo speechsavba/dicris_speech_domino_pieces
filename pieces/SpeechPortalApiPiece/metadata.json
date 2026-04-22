@@ -1,0 +1,22 @@
+{
+    "name": "PortalApiPiece",
+    "description": "Sends a request to the Portal API with status.",
+    "dependency": {
+        "requirements_file": "requirements_0.txt"
+    },
+    "container_resources": {
+        "requests": {
+            "cpu": 500,
+            "memory": 1024
+        },
+        "limits": {
+            "cpu": 2000,
+            "memory": 4096
+        }
+    },
+    "tags": ["portal", "api", "request"],
+    "style": {
+        "node_label": "Portal API",
+        "icon_class_name": "fa-solid:paper-plane"
+    }
+}

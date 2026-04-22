@@ -1,0 +1,15 @@
+{
+    "name": "SpeechDatasetPiece",
+    "description": "Provide random audio files from DiCris Speech dataset",
+    "dependency": {
+		"dockerfile": "Dockerfile_1"
+    },
+    "tags": [
+        "default",
+        "datasets"
+    ],
+    "style": {
+        "node_label": "Speech Dataset",
+        "icon_class_name": "lucide:toy-brick"
+    }
+}

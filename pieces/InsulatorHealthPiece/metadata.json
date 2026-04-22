@@ -2,8 +2,8 @@
     "name": "InsulatorHealthPiece",
     "description": "A Piece that predicts insulator health from sound.",
     "dependency": {
-        "dockerfile_": "Dockerfile_1"
-		"requirements_file": "requirements_6.txt"
+        "dockerfile_": "Dockerfile_1",
+        "requirements_file": "requirements_6.txt"
     },
     "container_resources": {
         "requests": {

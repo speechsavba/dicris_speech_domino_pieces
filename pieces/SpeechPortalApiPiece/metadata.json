@@ -2,6 +2,7 @@
     "name": "SpeechPortalApiPiece",
     "description": "Sends a request to the Portal API with status.",
     "dependency": {
+	"requirements_file": "requirements_2.txt"
     },
     "container_resources": {
         "requests": {

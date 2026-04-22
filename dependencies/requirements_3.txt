@@ -1,0 +1,2 @@
+domino_py==0.9.4
+pydantic==2.13.3

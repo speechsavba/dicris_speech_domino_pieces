@@ -2,6 +2,7 @@
     "name": "InsulatorPortalApiPiece",
     "description": "Sends a request to the Portal API with status.",
     "dependency": {
+	"requirements_file": "requirements_1.txt"
     },
     "container_resources": {
         "requests": {

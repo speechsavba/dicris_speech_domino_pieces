@@ -2,7 +2,7 @@
     "name": "InsulatorDatasetPiece",
     "description": "Provide random audio files from DiCris insulator dataset",
     "dependency": {
-		"dockerfile": "Dockerfile_1"
+	"requirements_file": "requirements_3.txt"
     },
     "tags": [
         "default",

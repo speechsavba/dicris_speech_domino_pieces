@@ -2,7 +2,7 @@
     "name": "SpeechDatasetPiece",
     "description": "Provide random audio files from DiCris Speech dataset",
     "dependency": {
-		"dockerfile": "Dockerfile_1"
+	"requirements_file": "requirements_4.txt"
     },
     "tags": [
         "default",

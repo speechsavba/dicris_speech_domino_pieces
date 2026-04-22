@@ -1,213 +1,16 @@
 {
-    "DicrisDatasetPiece": {
-        "name": "DicrisDatasetPiece",
-        "dependency": {
-            "dockerfile": "Dockerfile_1",
-            "requirements_file": null
-        },
-        "tags": [
-            "default",
-            "datasets"
-        ],
-        "style": {
-            "node_label": "Dicris Dataset",
-            "node_type": "default",
-            "node_style": {
-                "backgroundColor": "#ebebeb"
-            },
-            "useIcon": true,
-            "icon_class_name": "lucide:toy-brick",
-            "iconStyle": {
-                "cursor": "pointer"
-            }
-        },
-        "description": "Provide random audio files from DiCris",
-        "input_schema": {
-            "$defs": {
-                "DatasetFile": {
-                    "enum": [
-                        "http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav",
-                        "http://speech.savba.sk/DiCris/echo_20250715_094400_7B-0.wav",
-                        "http://speech.savba.sk/DiCris/echo_20250716_104301_D5.wav",
-                        "random"
-                    ],
-                    "title": "DatasetFile",
-                    "type": "string"
-                }
-            },
-            "properties": {
-                "dataset": {
-                    "$ref": "#/$defs/DatasetFile",
-                    "default": "",
-                    "title": "Wav name"
-                }
-            },
-            "title": "InputModel",
-            "type": "object"
-        },
-        "output_schema": {
-            "properties": {
-                "file_path": {
-                    "anyOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "default": null,
-                    "title": "File path"
-                }
-            },
-            "title": "OutputModel",
-            "type": "object"
-        },
-        "secrets_schema": null,
-        "source_url": null
-    },
-    "InsulatorEnvironmentSoundsPiece": {
-        "name": "InsulatorEnvironmentSoundsPiece",
-        "dependency": {
-            "dockerfile": "Dockerfile_1",
-            "requirements_file": null
-        },
-        "tags": [
-            "default",
-            "insulator"
-        ],
-        "style": {
-            "node_label": "Sound identification",
-            "node_type": "default",
-            "node_style": {
-                "backgroundColor": "#ebebeb"
-            },
-            "useIcon": true,
-            "icon_class_name": "ic:twotone-filter",
-            "iconStyle": {
-                "cursor": "pointer"
-            }
-        },
-        "description": "A Piece that identifies environmental sounds.",
-        "input_schema": {
-            "properties": {
-                "y": {
-                    "default": "http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav",
-                    "description": "path to audio or URL to audio or sound read with librosa library and converted to a base64 encoded string.",
-                    "title": "audio to asses",
-                    "type": "string"
-                },
-                "sr": {
-                    "default": 192000,
-                    "description": "Sampling frequency of sound (integer)",
-                    "title": "Sampling frequency of sound",
-                    "type": "integer"
-                }
-            },
-            "title": "InputModel",
-            "type": "object"
-        },
-        "output_schema": {
-            "properties": {
-                "top_class": {
-                    "title": "Top Class",
-                    "type": "string"
-                },
-                "top_prob": {
-                    "title": "Top Prob",
-                    "type": "number"
-                },
-                "top10": {
-                    "default": "unkown",
-                    "description": "Top 10 of sound classes",
-                    "title": "Top10",
-                    "type": "string"
-                }
-            },
-            "title": "OutputModel",
-            "type": "object"
-        },
-        "secrets_schema": null,
-        "source_url": null
-    },
-    "InsulatorHealthPiece": {
-        "name": "InsulatorHealthPiece",
-        "dependency": {
-            "dockerfile": "Dockerfile_1",
-            "requirements_file": null
-        },
-        "tags": [
-            "default",
-            "insulator"
-        ],
-        "style": {
-            "node_label": "Insulator health",
-            "node_type": "default",
-            "node_style": {
-                "backgroundColor": "#ebebeb"
-            },
-            "useIcon": true,
-            "icon_class_name": "ic:twotone-filter",
-            "iconStyle": {
-                "cursor": "pointer"
-            }
-        },
-        "description": "A Piece that predicts insulator health from sound.",
-        "container_resources": {
-            "requests": {
-                "cpu": 100,
-                "memory": 128
-            },
-            "limits": {
-                "cpu": 500,
-                "memory": 512
-            }
-        },
-        "input_schema": {
-            "properties": {
-                "y": {
-                    "default": "http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav",
-                    "description": "path to audio or URL to audio or sound read with librosa library and converted to a base64 encoded string.",
-                    "title": "audio to asses",
-                    "type": "string"
-                },
-                "sr": {
-                    "default": 192000,
-                    "description": "Sampling frequency of sound (integer)",
-                    "title": "Sampling frequency of sound",
-                    "type": "integer"
-                }
-            },
-            "title": "InputModel",
-            "type": "object"
-        },
-        "output_schema": {
-            "properties": {
-                "contamination": {
-                    "default": 0.0,
-                    "description": "Contamination of insulator from sound (float)",
-                    "title": "Contamination",
-                    "type": "number"
-                }
-            },
-            "title": "OutputModel",
-            "type": "object"
-        },
-        "secrets_schema": null,
-        "source_url": null
-    },
     "SpeechProcessingPiece": {
         "name": "SpeechProcessingPiece",
         "dependency": {
             "dockerfile": "Dockerfile_1",
-            "requirements_file": null
+            "requirements_file": "requirements_5a.txt"
         },
         "tags": [
             "default",
             "stress"
         ],
         "style": {
-            "node_label": "Speech processing - ASR, Speaker identification, Stress detection",
+            "node_label": "Speech processing",
             "node_type": "default",
             "node_style": {
                 "backgroundColor": "#ebebeb"
@@ -218,7 +21,7 @@
                 "cursor": "pointer"
             }
         },
-        "description": "A Piece that predicts level of stress in speech in range 0-100",
+        "description": "Speech pocessing piece",
         "container_resources": {
             "requests": {
                 "cpu": 100,
@@ -278,12 +81,12 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": null
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/SpeechProcessingPiece"
     },
     "SpeechSynthesisPiece": {
         "name": "SpeechSynthesisPiece",
         "dependency": {
-            "dockerfile": "Dockerfile_1",
+            "dockerfile": null,
             "requirements_file": null
         },
         "tags": [
@@ -336,6 +139,406 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": null
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/SpeechSynthesisPiece"
+    },
+    "SpeechPortalApiPiece": {
+        "name": "SpeechPortalApiPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_2.txt"
+        },
+        "tags": [
+            "portal",
+            "api",
+            "request"
+        ],
+        "style": {
+            "node_label": "Portal API",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "fa-solid:paper-plane",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "Sends a request to the Portal API with status.",
+        "container_resources": {
+            "requests": {
+                "cpu": 500,
+                "memory": 1024
+            },
+            "limits": {
+                "cpu": 2000,
+                "memory": 4096
+            }
+        },
+        "input_schema": {
+            "properties": {
+                "voicestresslevel": {
+                    "default": 0.0,
+                    "description": "Stress level in range: min 0.0 - 1.0 max  (float)",
+                    "title": "Voicestresslevel",
+                    "type": "number"
+                },
+                "textstresslevel": {
+                    "default": "NORMAL",
+                    "description": "Stress level from text - NORMAL, CAUTION or ALERT. I case of error: UNKNOWN",
+                    "title": "Textstresslevel",
+                    "type": "string"
+                },
+                "text": {
+                    "default": "",
+                    "description": "ASR text from audio",
+                    "title": "Text",
+                    "type": "string"
+                },
+                "speaker_id": {
+                    "default": "",
+                    "description": "Speaker ID from voice",
+                    "title": "Speaker Id",
+                    "type": "string"
+                },
+                "name": {
+                    "default": "Voiceprocessing",
+                    "description": "Name of the model whose status will be sent.",
+                    "title": "Model Name",
+                    "type": "string"
+                },
+                "portal_url": {
+                    "default": "https://dicris.sk:8000",
+                    "description": "URL of the Portal API endpoint (defaults to localhost).",
+                    "title": "Portal URL",
+                    "type": "string"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "returned_status": {
+                    "description": "JSON response returned by the Portal API.",
+                    "title": "Returned Status",
+                    "type": "object"
+                }
+            },
+            "required": [
+                "returned_status"
+            ],
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/SpeechPortalApiPiece"
+    },
+    "InsulatorPortalApiPiece": {
+        "name": "InsulatorPortalApiPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_1.txt"
+        },
+        "tags": [
+            "portal",
+            "api",
+            "request"
+        ],
+        "style": {
+            "node_label": "Portal API",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "fa-solid:paper-plane",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "Sends a request to the Portal API with status.",
+        "container_resources": {
+            "requests": {
+                "cpu": 500,
+                "memory": 1024
+            },
+            "limits": {
+                "cpu": 2000,
+                "memory": 4096
+            }
+        },
+        "input_schema": {
+            "properties": {
+                "contamination": {
+                    "default": 0.0,
+                    "description": "Contamination of insulator from sound (float)",
+                    "title": "Contamination",
+                    "type": "number"
+                },
+                "name": {
+                    "default": "Insulator",
+                    "description": "Name of the model whose status will be sent.",
+                    "title": "Model Name",
+                    "type": "string"
+                },
+                "portal_url": {
+                    "default": "https://dicris.sk:8000",
+                    "description": "URL of the Portal API endpoint (defaults to localhost).",
+                    "title": "Portal URL",
+                    "type": "string"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "returned_status": {
+                    "description": "JSON response returned by the Portal API.",
+                    "title": "Returned Status",
+                    "type": "object"
+                }
+            },
+            "required": [
+                "returned_status"
+            ],
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/InsulatorPortalApiPiece"
+    },
+    "InsulatorEnvironmentSoundsPiece": {
+        "name": "InsulatorEnvironmentSoundsPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": null
+        },
+        "tags": [
+            "default",
+            "insulator"
+        ],
+        "style": {
+            "node_label": "Sound identification",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "ic:twotone-filter",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "A Piece that identifies environmental sounds.",
+        "input_schema": {
+            "properties": {
+                "y": {
+                    "default": "http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav",
+                    "description": "path to audio or URL to audio or sound read with librosa library and converted to a base64 encoded string.",
+                    "title": "audio to asses",
+                    "type": "string"
+                },
+                "sr": {
+                    "default": 192000,
+                    "description": "Sampling frequency of sound (integer)",
+                    "title": "Sampling frequency of sound",
+                    "type": "integer"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "top_class": {
+                    "default": "unknown",
+                    "description": "Top Sound class",
+                    "title": "Top Class",
+                    "type": "string"
+                },
+                "top_prob": {
+                    "default": 0.0,
+                    "description": "Probability of Top Sound class",
+                    "title": "Top Prob",
+                    "type": "number"
+                },
+                "top10": {
+                    "default": "unkown",
+                    "description": "Top 10 of sound classes",
+                    "title": "Top10",
+                    "type": "string"
+                }
+            },
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/InsulatorEnvironmentSoundsPiece"
+    },
+    "InsulatorHealthPiece": {
+        "name": "InsulatorHealthPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_6.txt"
+        },
+        "tags": [
+            "default",
+            "insulator"
+        ],
+        "style": {
+            "node_label": "Insulator health",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "ic:twotone-filter",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "A Piece that predicts insulator health from sound.",
+        "container_resources": {
+            "requests": {
+                "cpu": 100,
+                "memory": 128
+            },
+            "limits": {
+                "cpu": 500,
+                "memory": 512
+            }
+        },
+        "input_schema": {
+            "properties": {
+                "y": {
+                    "default": "http://speech.savba.sk/DiCris/echo_20250716_113400_7B-3.wav",
+                    "description": "path to audio or URL to audio or sound read with librosa library and converted to a base64 encoded string.",
+                    "title": "audio to asses",
+                    "type": "string"
+                },
+                "sr": {
+                    "default": 192000,
+                    "description": "Sampling frequency of sound (integer)",
+                    "title": "Sampling frequency of sound",
+                    "type": "integer"
+                }
+            },
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "contamination": {
+                    "default": 0.0,
+                    "description": "Contamination of insulator from sound (float)",
+                    "title": "Contamination",
+                    "type": "number"
+                }
+            },
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/InsulatorHealthPiece"
+    },
+    "SpeechDatasetPiece": {
+        "name": "SpeechDatasetPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_4.txt"
+        },
+        "tags": [
+            "default",
+            "datasets"
+        ],
+        "style": {
+            "node_label": "Speech Dataset",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "lucide:toy-brick",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "Provide random audio files from DiCris Speech dataset",
+        "input_schema": {
+            "properties": {},
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "file_path": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "default": null,
+                    "title": "File path"
+                }
+            },
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/SpeechDatasetPiece"
+    },
+    "InsulatorDatasetPiece": {
+        "name": "InsulatorDatasetPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_3.txt"
+        },
+        "tags": [
+            "default",
+            "datasets"
+        ],
+        "style": {
+            "node_label": "Insulator Dataset",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "lucide:toy-brick",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "Provide random audio files from DiCris insulator dataset",
+        "input_schema": {
+            "properties": {},
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "file_path": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "default": null,
+                    "title": "File path"
+                }
+            },
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/speechsavba/dicris_speech_domino_pieces/tree/main/pieces/InsulatorDatasetPiece"
     }
 }

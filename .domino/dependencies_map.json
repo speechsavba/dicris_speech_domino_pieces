@@ -2,15 +2,79 @@
     "group0": {
         "dependency": {
             "dockerfile": "Dockerfile_1",
+            "requirements_file": "requirements_5a.txt"
+        },
+        "pieces": [
+            "SpeechProcessingPiece"
+        ],
+        "secrets": [],
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.4e-group0"
+    },
+    "group1": {
+        "dependency": {
+            "dockerfile": null,
             "requirements_file": null
         },
         "pieces": [
-            "DicrisDatasetPiece",
-            "InsulatorEnvironmentSoundsPiece",
-            "InsulatorHealthPiece",
-            "SpeechProcessingPiece",
-            "SpeechSynthesisPiece"
+            "SpeechSynthesisPiece",
+            "InsulatorEnvironmentSoundsPiece"
         ],
-        "secrets": []
+        "secrets": [],
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.4e-group1"
+    },
+    "group2": {
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_2.txt"
+        },
+        "pieces": [
+            "SpeechPortalApiPiece"
+        ],
+        "secrets": [],
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.4e-group2"
+    },
+    "group3": {
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_1.txt"
+        },
+        "pieces": [
+            "InsulatorPortalApiPiece"
+        ],
+        "secrets": [],
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.4e-group3"
+    },
+    "group4": {
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_6.txt"
+        },
+        "pieces": [
+            "InsulatorHealthPiece"
+        ],
+        "secrets": [],
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.4e-group4"
+    },
+    "group5": {
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_4.txt"
+        },
+        "pieces": [
+            "SpeechDatasetPiece"
+        ],
+        "secrets": [],
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.4e-group5"
+    },
+    "group6": {
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_3.txt"
+        },
+        "pieces": [
+            "InsulatorDatasetPiece"
+        ],
+        "secrets": [],
+        "source_image": "ghcr.io/speechsavba/dicris_speech_domino_pieces:0.1.4e-group6"
     }
 }
